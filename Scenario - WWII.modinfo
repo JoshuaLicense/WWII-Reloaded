@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mod id="dfb37c69-71cb-408d-8f1e-caa96fc1a5d7" version="1">
+  <Properties>
+    <Name>WWII</Name>
+    <Stability>Alpha</Stability>
+    <Teaser>Scenario - WWII</Teaser>
+    <Description>This scenario a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Frontline: units can capture tiles (or liberate your allied/friends tiles)[NEWLINE][ICON_BULLET]Supply lines: units that are not connected to a city won't get reinforcement and a malus in combat[NEWLINE][ICON_BULLET]Reinforcements: personnel and materiel are needed to "heal" your units.[NEWLINE][ICON_BULLET]National units: each great power have it's own set of units models[NEWLINE][NEWLINE][COLOR_RED]The[/COLOR] [COLOR_YELLOW]R.E.D. WWII Data Files (V.5)[/COLOR][COLOR_RED] mod must be activated to play this mod[/COLOR]</Description>
+    <Authors>Josh</Authors>
+    <HideSetupGame>1</HideSetupGame>
+    <AffectsSavedGames>1</AffectsSavedGames>
+    <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
+    <SupportsSinglePlayer>1</SupportsSinglePlayer>
+    <SupportsMultiplayer>0</SupportsMultiplayer>
+    <SupportsHotSeat>0</SupportsHotSeat>
+    <SupportsMac>0</SupportsMac>
+    <ReloadAudioSystem>0</ReloadAudioSystem>
+    <ReloadLandmarkSystem>1</ReloadLandmarkSystem>
+    <ReloadStrategicViewSystem>1</ReloadStrategicViewSystem>
+    <ReloadUnitSystem>1</ReloadUnitSystem>
+    <Custom_Background>GameSetup/Scenario_Background.dds</Custom_Background>
+  </Properties>
+  <Dependencies>
+    <Mod id="544d699d-1c84-4606-b22f-a1b009af9471" minversion="0" maxversion="999" title="R.E.D. WWII Data Files" />
+  </Dependencies>
+  <References />
+  <Blocks />
+  <Files>
+    <File md5="" import="0">MAPS/WWIIMap.Civ5Map</File>
+		<File md5="" import="1">GameSetup/Scenario_Background.dds</File>
+		<File md5="" import="0">GameSetup/WWIILoadScreen.lua</File>
+    <File md5="" import="0">GameSetup/WWIILoadScreen.xml</File>
+
+    <File md5="" import="0">GameSetup/Texts_EN_US.xml</File>
+		
+    <File md5="" import="0">GameSetup/SetupGame.sql</File>	
+    <File md5="" import="0">GameSetup/Leaders.sql</File>
+    <File md5="" import="0">GameSetup/Civilizations.sql</File>
+		
+    <File md5="" import="0">GameSetup/NewFontIcons.xml</File>
+    <File md5="" import="0">GameSetup/NewIconAtlases.xml</File>
+		
+
+  </Files>
+  <Actions>
+    <OnModActivated>
+			<UpdateDatabase>GameSetup/SetupGame.sql</UpdateDatabase>
+      <UpdateDatabase>GameSetup/Texts_EN_US.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/Leaders.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/Civilizations.sql</UpdateDatabase>
+			
+      <UpdateDatabase>GameSetup/NewIconAtlases.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/NewFontIcons.xml</UpdateDatabase>
+    </OnModActivated>
+  </Actions>
+  <EntryPoints>
+		<EntryPoint type="Custom" file="GameSetup/WWIILoadScreen.xml">
+      <Name>WWII</Name>
+      <Description></Description>
+    </EntryPoint>
+  </EntryPoints>
+</Mod>

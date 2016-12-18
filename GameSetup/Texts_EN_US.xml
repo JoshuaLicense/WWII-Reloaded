@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<Language_en_US>
+	
+		<!-- Load Screen -->
+	
+		<Row Tag="TXT_KEY_BRIEFING_TEXT">
+		  <Text>
+				Civilization Information: [NEWLINE][NEWLINE][COLOR_CYAN]France:[/COLOR][NEWLINE]	[ICON_CAPITAL]Try to hold off against the Axis until the Soviet Union can join the war (June 1941) creating two fronts. Losing Paris will result in the overthrow of your government so keep it at all costs.[NEWLINE]	[ICON_GOLD]Recieve Convoys from Controlling Indochina and recieve free Convoys from America.[NEWLINE]	[ICON_STRENGTH]France has strong early tanks and access to the foreign legion unit.[NEWLINE][NEWLINE][COLOR_PLAYER_DARK_BLUE]United Kingdom:[/COLOR][NEWLINE]	[ICON_CAPITAL]Surrounded by water it is important for the British to establish naval and air dominance. Keeping the Axis away from the Suez is also essential for winning the war.[NEWLINE]	[ICON_GOLD]Recieve Convoys from Controlling Hong Kong, Singapore and Bombay while also recieving free convoys from America, Canada and Australia. Keeping sea lanes open is essential to success and controlling the Suez will help make Convoys arrive faster.[NEWLINE]	[ICON_STRENGTH]The UK has the strongest navy and has access to powerful air units. Most British tanks are built for speed and open ground not strength.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_RED]U.S.S.R:[/COLOR] [NEWLINE]	[ICON_CAPITAL]If France should fall, it is essential to hold out against Germany consuming as much of their personal and material as possible. Relying on the western Allies will bring mixed results however it is most important to out endure Germany this will eventually lead to winning the war on the eastern front. [NEWLINE]	[ICON_GOLD]If a road or railroad is controlled from the City of Murmansk to Moscow then you will recieve convoys from America. You also will recieve free convoys from the west coast of America.[NEWLINE]	[ICON_STRENGTH]The Soviets have access to very strong tanks, with their UA it is also essential to create as many Infantry Divisions as your economy can handle.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_BLUE]The United States:[/COLOR] [NEWLINE]	[ICON_CAPITAL]As America it is important to harness production and supply the Allies with as much aircraft, ships and tanks as possible. Keeping the Soviet Union, United Kingdom and Australia alive at all costs is essential to keeping the Axis from invading the Americas.[NEWLINE]	[ICON_GOLD]The Americans recieve free convoys from Brazil and Australia. Controlling Panama will also give you a convoy.[NEWLINE]	[ICON_STRENGTH]The Americans production level allows them to create tanks, aircraft and ships at a rate capable of tripling the Axis's combined production rate. Though weak at the beginning American aircraft is strong in the late game, especially it's bombers. [NEWLINE][NEWLINE][ICON_BULLET][COLOR_GREY]Germany:[/COLOR] [NEWLINE]	[ICON_CAPITAL]As Germany it is important to defeat enemies quickly before they can stop your advance, letting them live too long will be fatel especially when attacking the Soviet Union. Keeping allied convoys from reaching their destination is essential to starving out nations like the United Kingdom.[NEWLINE]	[ICON_GOLD]The German's recieve convoys from Sweden, Finland and Norway so long as it isn't winter.[NEWLINE]	[ICON_STRENGTH]The Germans have strong tanks and aircraft. The blitz promotion means creating a combined air, armored and infantry attack on the enemy is always the best strategy to defeating enemies quickly.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_GREEN]Italy:[/COLOR] [NEWLINE]	[ICON_CAPITAL] As Italy it is important to keep pressure on France and as well as capturing the Suez Canal in order to slow convoys going to Britain. Italy has a strong ally in the north but it is Italy's job to protect the Axis's southern borders. [NEWLINE]	[ICON_GOLD]Italy doesn't recieve convoys, controlling the Suez however will slow Allied convoys.[NEWLINE]	[ICON_STRENGTH]Italy doesn't have a strong military advantage but it's strategic location allows them to protect it's holdings easier. [NEWLINE][NEWLINE][COLOR_WHITE]Greece[/COLOR] [NEWLINE]	[ICON_CAPITAL]Much like France, it is important to hold off the Axis advance as Greece until other allied countries join the war relieving pressure so an offensive is possible.[NEWLINE]	[ICON_GOLD]The Greeks do not recieve convoys however helping to protect the Suez will allow easy access of Allied convoys.[NEWLINE]	[ICON_STRENGTH]The Greeks do not possess any military strength's however the many choke points around Greece give them an advantage when defending.
+			</Text>
+		</Row>
+	
+		<!-- Yields -->
+		
+		<Row Tag="TXT_KEY_YIELD_PERSONNEL">
+			<Text>Personnel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_MATERIEL">
+			<Text>Materiel</Text>
+		</Row>
+		<Row Tag="TXT_KEY_YIELD_FUEL">
+			<Text>Fuel</Text>
+		</Row>
+		
+		<!-- Processes -->
+
+		<Row Tag="TXT_KEY_PROCESS_RECRUITING">
+			<Text>Your country needs YOU !</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_RECRUITING_HELP">
+			<Text>Recruits personnel for reinforcement in this city. The number of recruits per turn is relative to this city size and [ICON_FOOD] growth.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WAR_BONDS">
+			<Text>Buy War Bonds !</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROCESS_WAR_BONDS_HELP">
+			<Text>Convert 75% of [ICON_GOLD] gold and [ICON_PRODUCTION] production to materiel for reinforcements.</Text>
+		</Row>
+		
+		<!-- Civilizations -->
+		
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_KINGDOM_DESC">
+			<Text> The United Kingdom </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_KINGDOM_SHORT_DESC">
+			<Text>U.K.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_KINGDOM_ADJECTIVE">
+			<Text>British</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_CHURCHILL_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_CHURCHILL_TEXT_1">
+			<Text>
+				Sir Winston Leonard Spencer-Churchill, (30 November 1874 - 24 January 1965) was a British politician and statesman known for his leadership of the United Kingdom during the Second World War. He is widely regarded as one of the great wartime leaders. He served as Prime Minister twice (1940–45 and 1951–55). A noted statesman and orator, Churchill was also an officer in the British Army, a historian, a writer, and an artist. To date, he is the only British prime minister to have received the Nobel Prize in Literature, and he was the first person to be made an honorary citizen of the United States. ('from Wikipedia')
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_CHURCHILL_LIVED">
+			<Text>1874 - 1965 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_CHURCHILL_NAME">
+			<Text>Winston Churchill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_CHURCHILL_SUBTITLE">
+			<Text>Prime Minister of UK</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_CHURCHILL">
+			<Text>Winston Churchill</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_CHURCHILL_DAWN">
+			<Text>
+				Prime Minister, the British Empire has been the largest and most powerful on the face of the earth for centuries. We have been the protector of Democracy and the leading humitarian country of the world, our military might has gone unmatched for a long time. But many nations have grown up to challenge what we stand for and what we see right. The costly victory during World War I and the depression the world has slipped into has tremendously damaged our great economy.[NEWLINE][NEWLINE]However the people have elected you as the war menace is growing in Europe, relying on your leadership and strength to stand up against militarism and facism. Can you Prime Minister defeat the aggressors and get us out of this depression, can you prevent the fall of our Empire against all odds ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRANCE_DESC">
+			<Text> French Republic </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRANCE_SHORT_DESC">
+			<Text>France</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRANCE_ADJECTIVE">
+			<Text>French</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_DEGAULLE_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_DEGAULLE_TEXT_1">
+			<Text>
+				A veteran of World War I, in the 1920s and 1930s de Gaulle came to the fore as a proponent of mobile armoured divisions, which he considered would become central in modern warfare. During World War II, he reached the temporary rank of Brigadier General, leading one of the few successful armoured counter-attacks during the 1940 Battle of France, and then briefly served in the French government as France was falling.[NEWLINE][NEWLINE]
+				He escaped to Britain and gave a famous radio address, broadcast by the BBC on 18 June 1940, exhorting the French people to resist Nazi Germany and organised the Free French Forces with exiled French officers in Britain.[NEWLINE][NEWLINE]
+				He gradually obtained control of all French colonies except Indochina—most of which had at first been controlled by the pro-German Vichy regime—and by the time of the liberation of France in 1944 he was heading a government in exile, insisting that France be treated as an independent great power by the other Allies. De Gaulle became prime minister in the French Provisional Government, resigning in 1946 due to political conflicts.('from Wikipedia')
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_DEGAULLE_LIVED">
+			<Text>1890 - 1970 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_DEGAULLE_NAME">
+			<Text>Charles De Gaulle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_DEGAULLE_SUBTITLE">
+			<Text>Chef des Forces Françaises</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_DEGAULLE">
+			<Text>Charles De Gaulle</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_DEGAULLE_DAWN">
+			<Text>
+				General, France has been the center of the world of culture and arts for centuries, we are one of the few countries to be a standing Democracy and our military stands as the most modernized in the world. After the Great War ("La Der des Ders" as we thougth then) our nation had to rebuild herself, but just after we were plunged into the world depression and now things get worse as acts of agression increase in Europe and the Pacific. Now the world looks to our power to counter the rise of facism and the ideals of militarism.[NEWLINE][NEWLINE]As peace is more and more uncertain, the people of France have chosen you to be their leader in these hard times. Can you General lead France to repel the Facist agression, can you make this war to come to truly be "the Last of the Last" ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GERMANY_DESC">
+			<Text> German Reich </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GERMANY_SHORT_DESC">
+			<Text>Germany</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GERMANY_ADJECTIVE">
+			<Text>German</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_HITLER_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_HITLER_TEXT_1">
+			<Text>
+				Adolf Hitler was an Austrian-born German politician and the leader of the National Socialist German Workers Party, commonly known as the Nazi Party. He was Chancellor of Germany from 1933 to 1945 and, after 1934, also head of state as Führer und Reichskanzler, ruling the country as an absolute dictator.[NEWLINE][NEWLINE]
+				A decorated veteran of World War I, Hitler joined the precursor of the Nazi Party (NSDAP) in 1919 and became leader of NSDAP in 1921. He attempted a failed coup called the Beer Hall Putsch in Munich in 1923, for which he was imprisoned. Following his imprisonment, in which he wrote Mein Kampf, he gained support by promoting German nationalism, anti-semitism, anti-capitalism, and anti-communism with charismatic oratory and propaganda. He was appointed chancellor in 1933, and quickly transformed the Weimar Republic into the Third Reich, a single-party dictatorship based on the totalitarian and autocratic ideals of national socialism.[NEWLINE][NEWLINE]
+				Hitler ultimately wanted to establish a New Order of absolute Nazi German hegemony in continental Europe. To achieve this, he pursued a foreign policy with the declared goal of seizing Lebensraum for the Aryan people; directing the resources of the state towards this goal. This included the rearmament of Germany, which culminated in 1939 when the Wehrmacht invaded Poland. In response, the United Kingdom and France declared war against Germany, leading to the outbreak of World War II in Europe.[NEWLINE][NEWLINE]
+				Within three years, Germany and the Axis powers had occupied most of Europe, and most of Northern Africa, East and Southeast Asia and the Pacific Ocean. However, with the reversal of the Nazi invasion of the Soviet Union, the Allies gained the upper hand from 1942 onwards. By 1945, Allied armies had invaded German-held Europe from all sides. Nazi forces engaged in numerous violent acts during the war, including the systematic murder of as many as 17 million civilians, including an estimated six million Jews targeted in the Holocaust and between 500,000 and 1,500,000 Roma, Poles, Soviet civilians, Soviet prisoners of war, people with disabilities, homosexuals, Jehovah's Witnesses, and other political and religious opponents.[NEWLINE][NEWLINE]
+				In the final days of the war, during the Battle of Berlin in 1945, Hitler married his long-time mistress Eva Braun and, to avoid capture by Soviet forces less than two days later, the two committed suicide on 30 April 1945. ('from Wikipedia')
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_HITLER_LIVED">
+			<Text>1889 - 1945 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_HITLER_NAME">
+			<Text>Adolf Hitler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_HITLER_SUBTITLE">
+			<Text>Führer of the Third Reich</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_HITLER">
+			<Text>Adolf Hitler</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_HITLER_DAWN">
+			<Text>
+				Mein Führer, After World War I, we were humiliated by the betrayal of our own leaders and treated harshly by the Treaty of Versaille. The Weimer Republic has failed and has driven us into economic disaster. After turmoil and bad leadership, you have finally risen to power. Already you have turned our country around into a new glorious empire, The Third Reich, by defying the Treaty of Versaille and solving Germany's economic issues.[NEWLINE][NEWLINE]The Fatherland has always been a great nation, our military the best in the world, our generals unmatched and our industrial might unseen. Mein Führer, can you lead the German People to complete world domination, can you give them "das tausendjährige Reich" you've promised ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALY_DESC">
+			<Text> Italian Empire </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALY_SHORT_DESC">
+			<Text>Italy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALY_ADJECTIVE">
+			<Text>Italian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_MUSSOLINI_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_MUSSOLINI_TEXT_1">
+			<Text>
+				Mussolini became the 40th Prime Minister of Italy in 1922 and began using the title Il Duce by 1925. After 1936, his official title was "His Excellency Benito Mussolini, Head of Government, Duce of Fascism, and Founder of the Empire". Mussolini also created and held the supreme military rank of First Marshal of the Empire along with King Victor Emmanuel III of Italy, which gave him and the King joint supreme control over the military of Italy. Mussolini remained in power until he was replaced in 1943; for a short period after this until his death, he was the leader of the Italian Social Republic.[NEWLINE][NEWLINE]
+				Mussolini was among the founders of Italian Fascism, which included elements of nationalism, corporatism, national syndicalism, expansionism, social progress, and anti-socialism in combination with censorship of subversives and state propaganda. In the years following his creation of the Fascist ideology, Mussolini influenced, or achieved admiration from, a wide variety of political figures. ('from Wikipedia')
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_MUSSOLINI_LIVED">
+			<Text>1883 - 1945 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_MUSSOLINI_NAME">
+			<Text>Benito Mussolini</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_MUSSOLINI_SUBTITLE">
+			<Text>Duce of Italy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_MUSSOLINI">
+			<Text>Benito Mussolini</Text>
+		</Row>QW
+		<Row Tag="TXT_KEY_WWII_MUSSOLINI_DAWN">
+			<Text>
+				Duce, After the costly victory during World War I, our government went into turmoil and fearing a Communist uprising they installed you to power. Taking immediate action, you have eliminated all opposition and have becomed the first Fascist leader in Europe. The people of Italy have gotten weary of your rule and are upset by the hard economic times that have come upon them, however you have promised them a New Roman empire and defying the League of Nations you have already invaded Eithopia, first to fall under our domination.[NEWLINE][NEWLINE]For centuries we were the most important empire in the West and the hard working Italian people look to you to establish back their glory. Duce, can you restore a powerful Empire, can you make Rome the center of the world once again ?[NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		
+		<!-- Traits -->
+		<Row Tag="TXT_KEY_TRAIT_NEVER_SURRENDER">
+			<Text>+25% [ICON_STRENGTH] combat for units fighting on (or over) UK territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_NEVER_SURRENDER_DESC">
+			<Text>"We shall never surrender"</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_BLITZKRIEG">
+			<Text>All Armor units start with the blitz promotion.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_BLITZKRIEG_DESC">
+			<Text>Blitzkrieg</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_RESISTANCE">
+			<Text>50% chance of partisan units spawning on forrest territory lost to the enemy.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_RESISTANCE_DESC">
+			<Text>French Resistance</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_MARENOSTRUM">
+			<Text>Sea units require 33% less maintenance and Sea units get a combat bonus in the Mediterranean.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_MARENOSTRUM_DESC">
+			<Text>Mare Nostrum</Text>
+		</Row>
+		
+		<!-- Replaced Texts -->
+		<Replace Tag="TXT_KEY_BEGIN_GAME_BUTTON">
+			<Text>Go to War...</Text>
+		</Replace>
+		
+		<Replace Tag="TXT_KEY_INTERFACEMODE_AIR_SWEEP">
+			<Text>Air Superiority</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_INTERFACEMODE_AIR_SWEEP_HELP">
+			<Text>Order the unit to recon the targeted area and engage enemy fighters.</Text>
+		</Replace>
+		
+	</Language_en_US>	
+
+</GameData>
