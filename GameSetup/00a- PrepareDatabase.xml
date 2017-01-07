@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Beach (Firaxis Games) -->
+<GameData>
+	<BuildingClasses>
+		<Delete />
+	</BuildingClasses>
+	<DeleteMissingReferences table="BuildingClasses" column="Type"/>
+	<DeleteMissingReferences table="Buildings" column="Type"/>
+	
+	<Builds>
+		<Delete />
+	</Builds>
+	<DeleteMissingReferences table="Builds" column="Type"/>
+	
+	<MinorCivilizations>
+		<Delete />
+	</MinorCivilizations>
+	<DeleteMissingReferences table="MinorCivilizations" column="Type"/>
+	
+	<Units>
+		<Delete />
+	</Units>
+	<!--<DeleteMissingReferences table="Units" column="Type"/>-->
+	
+	<!--<Civilizations>		
+		<Delete />
+	</Civilizations>
+	<DeleteMissingReferences table="Civilizations" column="Type"/>-->
+	
+	<Traits>
+		<Delete />
+	</Traits>
+	<DeleteMissingReferences table="Traits" column="Type"/>
+	<Leaders>
+		<Delete />
+	</Leaders>
+	<DeleteMissingReferences table="Leaders" column="Type"/>
+</GameData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<CustomModOptions>
+		<Replace Name="GLOBAL_CS_OVERSEAS_TERRITORY" Value="1"/>
+		<Replace Name="GLOBAL_LOCAL_GENERALS" Value="1"/>
+		<Replace Name="API_PLOT_BASED_DAMAGE" Value="1"/>
+		<Replace Name="BALANCE_CORE_BUILDING_INVESTMENTS" Value="1"/>
+		<Replace Name="BALANCE_CORE_BUILDING_RESOURCE_MAINTENANCE" Value="1"/> 
+		<Replace Name="BALANCE_CORE_EMBARK_CITY_NO_COST" Value="1"/> 
+		<Replace Name="BALANCE_CORE_MILITARY_PROMOTION_ADVANCED" Value="1"/> 
+		<Replace Name="UNITS_MAX_HP" Value="1"/> 
+		<Replace Name="GLOBAL_STACKING_RULES" Value="1"/> 		
+	</CustomModOptions>
+</GameData>

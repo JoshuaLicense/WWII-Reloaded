@@ -2,6 +2,31 @@
 <GameData>
 	<Language_en_US>
 	
+		<!-- Date -->
+		
+		<Row Tag="TXT_KEY_SCENARIO_YEAR">
+				<Text>{1_Date: number #}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_SCENARIO_WEEK">
+			<Text>{1_WeekNum}</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_TIME_AD">
+			<Text> </Text>
+		</Replace>
+		
+		<!-- Supply line -->
+		<Row Tag="TXT_KEY_SUPPLY_LINE_EFFICIENCY"> 
+			<Text>Supply line efficiency: {1_Efficiency: number "##"}%</Text>
+		</Row>
+		
+		<!-- Occupied / Pupper -->
+		<Row Tag="TXT_KEY_PRODMOD_OCCUPIED">
+			<Text>[NEWLINE][ICON_BULLET]Modifier for [ICON_OCCUPIED] Occupied cities: {1_Num}%</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_CITY_OCCUPIED">
+			<Text>City is [ICON_OCCUPIED] Occupied! [NEWLINE][COLOR_WARNING_TEXT]-25% [ICON_GOLD] from [ICON_TRADE] city connection. [NEWLINE]-25% [ICON_PRODUCTION] in this city.</Text>
+		</Replace>
+		
 		<!-- Load Screen -->
 	
 		<Row Tag="TXT_KEY_BRIEFING_TEXT">
@@ -9,21 +34,114 @@
 				Civilization Information: [NEWLINE][NEWLINE][COLOR_CYAN]France:[/COLOR][NEWLINE]	[ICON_CAPITAL]Try to hold off against the Axis until the Soviet Union can join the war (June 1941) creating two fronts. Losing Paris will result in the overthrow of your government so keep it at all costs.[NEWLINE]	[ICON_GOLD]Recieve Convoys from Controlling Indochina and recieve free Convoys from America.[NEWLINE]	[ICON_STRENGTH]France has strong early tanks and access to the foreign legion unit.[NEWLINE][NEWLINE][COLOR_PLAYER_DARK_BLUE]United Kingdom:[/COLOR][NEWLINE]	[ICON_CAPITAL]Surrounded by water it is important for the British to establish naval and air dominance. Keeping the Axis away from the Suez is also essential for winning the war.[NEWLINE]	[ICON_GOLD]Recieve Convoys from Controlling Hong Kong, Singapore and Bombay while also recieving free convoys from America, Canada and Australia. Keeping sea lanes open is essential to success and controlling the Suez will help make Convoys arrive faster.[NEWLINE]	[ICON_STRENGTH]The UK has the strongest navy and has access to powerful air units. Most British tanks are built for speed and open ground not strength.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_RED]U.S.S.R:[/COLOR] [NEWLINE]	[ICON_CAPITAL]If France should fall, it is essential to hold out against Germany consuming as much of their personal and material as possible. Relying on the western Allies will bring mixed results however it is most important to out endure Germany this will eventually lead to winning the war on the eastern front. [NEWLINE]	[ICON_GOLD]If a road or railroad is controlled from the City of Murmansk to Moscow then you will recieve convoys from America. You also will recieve free convoys from the west coast of America.[NEWLINE]	[ICON_STRENGTH]The Soviets have access to very strong tanks, with their UA it is also essential to create as many Infantry Divisions as your economy can handle.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_BLUE]The United States:[/COLOR] [NEWLINE]	[ICON_CAPITAL]As America it is important to harness production and supply the Allies with as much aircraft, ships and tanks as possible. Keeping the Soviet Union, United Kingdom and Australia alive at all costs is essential to keeping the Axis from invading the Americas.[NEWLINE]	[ICON_GOLD]The Americans recieve free convoys from Brazil and Australia. Controlling Panama will also give you a convoy.[NEWLINE]	[ICON_STRENGTH]The Americans production level allows them to create tanks, aircraft and ships at a rate capable of tripling the Axis's combined production rate. Though weak at the beginning American aircraft is strong in the late game, especially it's bombers. [NEWLINE][NEWLINE][ICON_BULLET][COLOR_GREY]Germany:[/COLOR] [NEWLINE]	[ICON_CAPITAL]As Germany it is important to defeat enemies quickly before they can stop your advance, letting them live too long will be fatel especially when attacking the Soviet Union. Keeping allied convoys from reaching their destination is essential to starving out nations like the United Kingdom.[NEWLINE]	[ICON_GOLD]The German's recieve convoys from Sweden, Finland and Norway so long as it isn't winter.[NEWLINE]	[ICON_STRENGTH]The Germans have strong tanks and aircraft. The blitz promotion means creating a combined air, armored and infantry attack on the enemy is always the best strategy to defeating enemies quickly.[NEWLINE][NEWLINE][ICON_BULLET][COLOR_GREEN]Italy:[/COLOR] [NEWLINE]	[ICON_CAPITAL] As Italy it is important to keep pressure on France and as well as capturing the Suez Canal in order to slow convoys going to Britain. Italy has a strong ally in the north but it is Italy's job to protect the Axis's southern borders. [NEWLINE]	[ICON_GOLD]Italy doesn't recieve convoys, controlling the Suez however will slow Allied convoys.[NEWLINE]	[ICON_STRENGTH]Italy doesn't have a strong military advantage but it's strategic location allows them to protect it's holdings easier. [NEWLINE][NEWLINE][COLOR_WHITE]Greece[/COLOR] [NEWLINE]	[ICON_CAPITAL]Much like France, it is important to hold off the Axis advance as Greece until other allied countries join the war relieving pressure so an offensive is possible.[NEWLINE]	[ICON_GOLD]The Greeks do not recieve convoys however helping to protect the Suez will allow easy access of Allied convoys.[NEWLINE]	[ICON_STRENGTH]The Greeks do not possess any military strength's however the many choke points around Greece give them an advantage when defending.
 			</Text>
 		</Row>
-	
+		
 		<!-- Yields -->
 		
 		<Row Tag="TXT_KEY_YIELD_PERSONNEL">
 			<Text>Personnel</Text>
 		</Row>
+		<Row Tag="TXT_KEY_TOP_PANEL_PERSONNEL">
+			<Text>[ICON_PERSONNEL] [COLOR:255:255:255:255]{1_TotalPersonnel: number "##"} {2_PersonnelPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PERSONNEL_HELP_INFO">
+			<Text>[ICON_PERSONNEL] Personnel are needed to reinforce your units after they have taken casualties in combat. Depending of the unit type, more or less personnel will be needed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_AVAILABLE_PERSONNEL">
+			<Text>{1_num} total [ICON_PERSONNEL] Personnel in reserve.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_PERSONNEL_PER_TURN">
+			<Text>{1_num} forecasted amount of [ICON_PERSONNEL] Personnel flux next turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_PERSONNEL_FROM_CITY">
+			<Text>{1_num} from the output of all cities.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_TP_PERSONNEL_FROM_MINOR">
+			<Text>{1_num} from minor civilizations (Friends, Allies).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_PERSONNEL_FROM_TRAIT">
+			<Text>{1_num} from trait.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_PERSONNEL_FROM_UNCATEGORIZED">
+			<Text>{1_num} from other sources.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_UNIT_HEALING">
+			<Text>{1_num} forecasted amount requested from injured units the next turn.</Text>
+		</Row>
+		
 		<Row Tag="TXT_KEY_YIELD_MATERIEL">
 			<Text>Materiel</Text>
 		</Row>
+		<Row Tag="TXT_KEY_TOP_PANEL_MATERIEL">
+			<Text>[ICON_MATERIEL] [COLOR:255:255:255:255]{1_TotalMateriel: number "##"} {2_MaterielPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_MATERIEL_HELP_INFO">
+			<Text>[ICON_MATERIEL] Materiel are needed to reinforce your units after they have taken damage in combat. Depending of the unit type, more or less materiel will be needed.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_AVAILABLE_MATERIEL">
+			<Text>{1_num} total [ICON_MATERIEL] Materiel in reserve.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_MATERIEL_PER_TURN">
+			<Text>{1_num} forecasted amount of [ICON_MATERIEL] Materiel flux next turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_MATERIEL_FROM_CITY">
+			<Text>{1_num} from the output of all cities.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_TP_MATERIEL_FROM_MINOR">
+			<Text>{1_num} from minor civilizations (Friends, Allies).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_MATERIEL_FROM_TRAIT">
+			<Text>{1_num} from trait.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_MATERIEL_FROM_UNCATEGORIZED">
+			<Text>{1_num} from other sources.</Text>
+		</Row>
+		
 		<Row Tag="TXT_KEY_YIELD_FUEL">
 			<Text>Fuel</Text>
 		</Row>
+		<Row Tag="TXT_KEY_TOP_PANEL_FUEL">
+			<Text>[ICON_FUEL] [COLOR:255:255:255:255]{1_TotalFuel: number "##"} {2_FuelPerTurn: number "'(+'##')';'[COLOR:255:60:60:255](-'##')'"}[/COLOR]</Text>
+		</Row>
+		<Row Tag="TXT_KEY_FUEL_HELP_INFO">
+			<Text>[ICON_FUEL] Fuel is needed to keep your machinery running, rationing will occur if this falls below certain thresholds.</Text>
+		</Row>	
+		<Row Tag="TXT_KEY_TP_AVAILABLE_FUEL">
+			<Text>{1_num} total [ICON_FUEL] Fuel in reserve.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_FUEL_PER_TURN">
+			<Text>{1_num} forecasted amount of [ICON_FUEL] Fuel flux next turn.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_FUEL_FROM_CITY">
+			<Text>{1_num} from the output of all cities.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_TP_FUEL_FROM_MINOR">
+			<Text>{1_num} from minor civilizations (Friends, Allies).</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_FUEL_FROM_TRAIT">
+			<Text>{1_num} from trait.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_FUEL_FROM_UNCATEGORIZED">
+			<Text>{1_num} from other sources.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_UNIT_MAINTENANCE">
+			<Text>{1_num} forecasted amount requested from mechanized units the next turn.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_TP_RATIONING_CURRENT">
+			<Text>Current fuel rationing: {@1_RationedLevel}</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_RATIONING_MOVEMENT">
+			<Text>[COLOR:255:60:60:255]-{1_MovementRation: number "##"}%[/COLOR] movement points.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_RATIONING_CONSUMPTION">
+			<Text>[COLOR:60:255:60:255]-{1_ConsumptionRation: number "##"}%[/COLOR] fuel consumption per unit.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TP_RATIONING_SAVED">
+			<Text>[COLOR:60:255:60:255]{1_RationSaved}[/COLOR] fuel saved by rationing.</Text>
+		</Row>
 		
 		<!-- Processes -->
-
+		
 		<Row Tag="TXT_KEY_PROCESS_RECRUITING">
 			<Text>Your country needs YOU !</Text>
 		</Row>
@@ -68,7 +186,7 @@
 		<Row Tag="TXT_KEY_LEADER_WWII_CHURCHILL">
 			<Text>Winston Churchill</Text>
 		</Row>
-		<Row Tag="TXT_KEY_WWII_CHURCHILL_DAWN">
+		<Row Tag="TXT_KEY_WWII_UNITED_KINGDOM_DAWN">
 			<Text>
 				Prime Minister, the British Empire has been the largest and most powerful on the face of the earth for centuries. We have been the protector of Democracy and the leading humitarian country of the world, our military might has gone unmatched for a long time. But many nations have grown up to challenge what we stand for and what we see right. The costly victory during World War I and the depression the world has slipped into has tremendously damaged our great economy.[NEWLINE][NEWLINE]However the people have elected you as the war menace is growing in Europe, relying on your leadership and strength to stand up against militarism and facism. Can you Prime Minister defeat the aggressors and get us out of this depression, can you prevent the fall of our Empire against all odds ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
 			</Text>
@@ -104,7 +222,7 @@
 		<Row Tag="TXT_KEY_LEADER_WWII_DEGAULLE">
 			<Text>Charles De Gaulle</Text>
 		</Row>
-		<Row Tag="TXT_KEY_WWII_DEGAULLE_DAWN">
+		<Row Tag="TXT_KEY_WWII_FRANCE_DAWN">
 			<Text>
 				General, France has been the center of the world of culture and arts for centuries, we are one of the few countries to be a standing Democracy and our military stands as the most modernized in the world. After the Great War ("La Der des Ders" as we thougth then) our nation had to rebuild herself, but just after we were plunged into the world depression and now things get worse as acts of agression increase in Europe and the Pacific. Now the world looks to our power to counter the rise of facism and the ideals of militarism.[NEWLINE][NEWLINE]As peace is more and more uncertain, the people of France have chosen you to be their leader in these hard times. Can you General lead France to repel the Facist agression, can you make this war to come to truly be "the Last of the Last" ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
 			</Text>
@@ -142,7 +260,7 @@
 		<Row Tag="TXT_KEY_LEADER_WWII_HITLER">
 			<Text>Adolf Hitler</Text>
 		</Row>
-		<Row Tag="TXT_KEY_WWII_HITLER_DAWN">
+		<Row Tag="TXT_KEY_WWII_GERMANY_DAWN">
 			<Text>
 				Mein Führer, After World War I, we were humiliated by the betrayal of our own leaders and treated harshly by the Treaty of Versaille. The Weimer Republic has failed and has driven us into economic disaster. After turmoil and bad leadership, you have finally risen to power. Already you have turned our country around into a new glorious empire, The Third Reich, by defying the Treaty of Versaille and solving Germany's economic issues.[NEWLINE][NEWLINE]The Fatherland has always been a great nation, our military the best in the world, our generals unmatched and our industrial might unseen. Mein Führer, can you lead the German People to complete world domination, can you give them "das tausendjährige Reich" you've promised ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL]
 			</Text>
@@ -177,9 +295,111 @@
 		<Row Tag="TXT_KEY_LEADER_WWII_MUSSOLINI">
 			<Text>Benito Mussolini</Text>
 		</Row>QW
-		<Row Tag="TXT_KEY_WWII_MUSSOLINI_DAWN">
+		<Row Tag="TXT_KEY_WWII_ITALY_DAWN">
 			<Text>
 				Duce, After the costly victory during World War I, our government went into turmoil and fearing a Communist uprising they installed you to power. Taking immediate action, you have eliminated all opposition and have becomed the first Fascist leader in Europe. The people of Italy have gotten weary of your rule and are upset by the hard economic times that have come upon them, however you have promised them a New Roman empire and defying the League of Nations you have already invaded Eithopia, first to fall under our domination.[NEWLINE][NEWLINE]For centuries we were the most important empire in the West and the hard working Italian people look to you to establish back their glory. Duce, can you restore a powerful Empire, can you make Rome the center of the world once again ?[NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_USSR_DESC">
+			<Text>U.S.S.R</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_USSR_SHORT_DESC">
+			<Text>U.S.S.R</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_USSR_ADJECTIVE">
+			<Text>Soviet</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_STALIN_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_STALIN_TEXT_1">
+			<Text>
+				Joseph Vissarionovich Stalin (18 December 1878 - 5 March 1953) was a Georgian-born, Soviet politician and Bolshevik revolutionary, who held the position of first General Secretary of the Communist Party of the Soviet Union's Central Committee from 1922 until his death in 1953. While formally the office of the General Secretary was elective and was not initially regarded as the top position in the Soviet state, after Vladimir Lenin's death in 1924, Stalin managed to consolidate more and more power in his hands, gradually putting down all opposition groups within the party. This included Leon Trotsky, the Red Army organizer, proponent of world revolution, and principal critic of Stalin among the early Soviet leaders, who was exiled from the Soviet Union in 1929. Instead, Stalin's idea of socialism in one country became the primary line of the Soviet politics. ('from Wikipedia')
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_STALIN_LIVED">
+			<Text>1878 - 1953 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_STALIN_NAME">
+			<Text>Joseph Stalin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_STALIN_SUBTITLE">
+			<Text>General Secretary of the Communist Party</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_STALIN">
+			<Text>Joseph Stalin</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_USSR_DAWN">
+			<Text>
+				Comrade, long have the people of the world been cursed by Imperialism and Capitalism. But no longer, the glorious Soviet Union has risen out of the ashes of the horrible World War I and the Great October Revolution. However our nation has now to defeat Facism and the evil influences of the West to become the superpower it is meant to be.[NEWLINE][NEWLINE]The people of the glorious Soviet Union have recognized you as the absolute authority to lead them to victory against the capitalist and fascist menace. Can you comrade show the world the power of our socialist government, spreading our communist ideals all over the world, can you make us the true victorious power of the war to come ?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_STATES_DESC">
+			<Text>The United States of America</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_STATES_SHORT_DESC">
+			<Text>United States</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_UNITED_STATES_ADJECTIVE">
+			<Text>US</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_ROOSEVELT_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_ROOSEVELT_TEXT_1">
+			<Text>
+				Franklin Delano Roosevelt, the 32nd President of the United States, is best known for leading the US out of the Great Depression and to victory in WWII. Crippled by polio at 39, Roosevelt displayed indomitable courage and resolve to overcome his disability and achieve his goals.[NEWLINE][NEWLINE]Roosevelt was a man of contradictions. Though wealthy and powerful, Roosevelt was beloved by the poor and downtrodden and despised as a socialist by the wealthy and powerful. Roosevelt ran for office on a platform of isolationism, but he hated fascism and oppression, and unceasingly worked behind the scenes to aid the UK and get America into World War II.[NEWLINE][NEWLINE]When Roosevelt first became President in 1932, the United States was in a crippling depression. Banks had closed and businesses had failed. Millions were unemployed and falling into poverty. To counter this malaise, Roosevelt enacted a series of policies that he called the "New Deal:" a sweeping program to bring recovery to business and agriculture, relief to the unemployed and to those in danger of losing businesses, farms and homes.[NEWLINE][NEWLINE]Meanwhile, the Depression raged across the entire planet, and much of the rest of the world was degenerating into chaos. Japan was attacking China, while the two great dictators - Hitler and Stalin - were threatening to engulf Europe. The United States had largely withdrawn from world politics after World War I and the failure of the League of Nations, and few American politicians had the stomach to call for intervention. Roosevelt didn't, either, and in fact he ran for reelection on a platform of isolationism.[NEWLINE][NEWLINE]However, Roosevelt sincerely believed that the United States would have to become involved in the conflict one way or another - he abhorred fascism and totalitarianism - and he feared that, left unchecked, Germany, Russia and Japan would become powerful enough to overwhelm everything in their path - including, eventually, the US. Thus he did everything in his power to ready the US for the upcoming conflict by dramatically increasing the size of the US armed forces, pitifully weakened after the end of World War I. Further, he gave as much aid as was politically feasible to England, whom he rightly saw as the unprepared US's chief protection from the German war machine. Meanwhile, he did his best to turn public opinion around in favor of more direct action.[NEWLINE][NEWLINE]It is not clear that Roosevelt would have succeeded in that, if it weren't for Japan's attack against Pearl Harbor. Though casualties were extremely heavy, Pearl Harbor did "awake a sleeping giant," and at long last the citizens of the country realized their peril. And when Germany made the huge strategic blunder of declaring war on the United States shortly thereafter, Roosevelt was able to put all of the United States' massive industrial and military might into the conflict.[NEWLINE][NEWLINE]During the war, Roosevelt showed himself to be a masterful international politician; the UK-Soviet-American alliance was shaky at best, and his adroit handling of Stalin and Churchill did much to keep things running (relatively) smoothly. Meanwhile his "fireside chats" kept the country firmly behind him, and world opinion in the allies' favor. It has been said that Hitler hated Roosevelt even more than Stalin or Churchill - high praise indeed.[NEWLINE][NEWLINE]As a military leader Roosevelt was less sure-footed and the US made some early strategic blunders that could have been avoided. He learned quickly, however, and by the end of his life the US military machine was the most powerful that the world had ever seen.[NEWLINE][NEWLINE]Roosevelt died in 1945, shortly before the war ended. His legacies of social welfare and international cooperation would dominate United States policies for the next half a century.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_ROOSEVELT_LIVED">
+			<Text>1905 - 1945 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_ROOSEVELT_NAME">
+			<Text>Franklin Roosevelt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_ROOSEVELT_SUBTITLE">
+			<Text>Franklin Roosevelt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_ROOSEVELT">
+			<Text>Franklin Roosevelt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_UNITED_STATES_DAWN">
+			<Text>
+				Mr. President, After the victory of World War I, we entered an economic boom becoming the largest economic country in the world. However our nation in the past decade has entered a Great Depression creating havoc for the American people and the American economy. They then elected you to lead them through the depression and hard economic times. You let them have a New Deal giving many Americans jobs and hope for a good future however the nation was still stung deeply by the Depression.[NEWLINE][NEWLINE]But The storm clouds in Europe are brewing once again and the American people have elected you to find away to stay out of the conflict. Can you Mr. President redeem the American economy, can you free the world of Facism and Communism, can you become a super power...?[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR][TAB]              [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL]
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_JAPAN_DESC">
+			<Text>The Empire of Japan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_JAPAN_SHORT_DESC">
+			<Text>Japan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_JAPAN_ADJECTIVE">
+			<Text>Japanese</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_TOJO_HEADING_1">
+			<Text>History</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_TOJO_TEXT_1">
+			<Text>
+				With World War II looming after 1938 with the Japanese invasion of China and the aggression of Nazi Germany, Roosevelt gave strong diplomatic and financial support to China and the United Kingdom, while remaining officially neutral. His goal was to make America the "Arsenal of Democracy", which would supply munitions to the Allies. In March 1941, Roosevelt, with Congressional approval, provided Lend-Lease aid to Britain and China.			
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_TOJO_LIVED">
+			<Text>1909 – 1948 AD</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_TOJO_NAME">
+			<Text>Hideki Tojo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIVILOPEDIA_LEADERS_WWII_TOJO_SUBTITLE">
+			<Text>Hideki Tojo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_LEADER_WWII_TOJO">
+			<Text>Hideki Tojo</Text>
+		</Row>
+		<Row Tag="TXT_KEY_WWII_JAPAN_DAWN">
+			<Text>
+				"Prime Minister, for years the Europeans have dominated the Asian world, but no longer. They have grown weak since World War I, and it is our right to take back Asia from the European and American plague. We are now a strong power, the Empire of the Rising Sun has already built one of the greatest navies in the world. We have already defeated the Chinese in Manchuria, and have taken islands in the Pacific.[NEWLINE][NEWLINE]We are at our golden age, the Empire of Japan is ready to achieve it's glory as a world power. Can you Prime Minister defeat the European and American plague and reunite the Asian lands...?"[NEWLINE][NEWLINE][NEWLINE][NEWLINE][ICON_BULLET][COLOR_UNIT_TEXT]Army:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CITY_BLUE]Navy:[/COLOR]                      [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_RESEARCH_RATE]Air Force:[/COLOR]                [ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_GOLD]Economy:[/COLOR]                 [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_YIELD_PRODUCTION]Production:[/COLOR][TAB]              [ICON_CAPITAL][ICON_CAPITAL][NEWLINE][NEWLINE][ICON_BULLET][COLOR_CULTURE_RATE]Diplomatic Situation:[/COLOR] [ICON_CAPITAL]			
 			</Text>
 		</Row>
 		
@@ -208,10 +428,672 @@
 		<Row Tag="TXT_KEY_TRAIT_MARENOSTRUM_DESC">
 			<Text>Mare Nostrum</Text>
 		</Row>
+		<Row Tag="TXT_KEY_TRAIT_ARSENALOFDEMOCRACY">
+			<Text>The Manufactory Improvement's output of [ICON_PRODUCTION] Production is doubled.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_ARSENALOFDEMOCRACY_DESC">
+			<Text>The Arsenal of Democracy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_GREAT_PATRIOTIC_WAR">
+			<Text>Double the rate of [ICON_PERSONNEL] personnel recruited in Soviet cities. Captured Western cities move [ICON_PRODUCTION] to the east.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_GREAT_PATRIOTIC_WAR_DESC">
+			<Text>Great Patriotic War</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_EMPIRE_OF_THE_PACIFIC">
+			<Text>TBC</Text>
+		</Row>
+		<Row Tag="TXT_KEY_TRAIT_EMPIRE_OF_THE_PACIFIC_DESC">
+			<Text>Empire of the Pacific</Text>
+		</Row>
+		<!-- Buildings -->
+		<Row Tag="TXT_KEY_BUILDING_LAND_FACTORY">
+			<Text>Land Factory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LAND_FACTORY_HELP">
+			<Text>Allows construction of medium and heavy tanks.[NEWLINE]+15% [ICON_PRODUCTION] Production when building Land Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMALL_AIR_FACTORY">
+			<Text>Small Air Factory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SMALL_AIR_FACTORY_HELP">
+			<Text>Allows construction of fighters, fighters-bombers and attack aircrafts.[NEWLINE]+10% [ICON_PRODUCTION] Production when building Air Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY">
+			<Text>Medium Air Factory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_MEDIUM_AIR_FACTORY_HELP">
+			<Text>Allows construction of heavy fighters and light/fast bombers.[NEWLINE]+10% [ICON_PRODUCTION] Production when building Air Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LARGE_AIR_FACTORY">
+			<Text>Large Air Factory</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LARGE_AIR_FACTORY_HELP">
+			<Text>Allows construction of bombers and heavy bombers.[NEWLINE]+10% [ICON_PRODUCTION] Production when building Air Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SHIPYARD">
+			<Text>Shipyard</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SHIPYARD_HELP">
+			<Text>Allows construction of submarines, battleships and dreadnougth.[NEWLINE]+10% [ICON_PRODUCTION] Production when building Sea Units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT">
+			<Text>Synthetic Fuel Plant</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_SYNTHETIC_FUEL_PLANT_HELP">
+			<Text>Synthetic Fuel Plants allows production of fuel when oil is scarce.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OIL_REFINERY">
+			<Text>Oil Refinery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OIL_REFINERY_HELP">
+			<Text>Refines oil resource into useable fuels.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OPEN_CITY">
+			<Text>Open City</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_OPEN_CITY_HELP">
+			<Text>You can't set defensive position in this city.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LEGION_HQ">
+			<Text>Foreign Legion HQ</Text>
+		</Row>
+		<Row Tag="TXT_KEY_BUILDING_LEGION_HQ_HELP">
+			<Text>You can train Foreign Legion units in this city.</Text>
+		</Row>
+		<Replace Tag="TXT_KEY_BUILDING_BROADCAST_TOWER_HELP">
+			<Text>Radio are used to broadcast propaganda.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_BANK_HELP">
+			<Text>Banks will raise your gold production</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_FACTORY_HELP">
+			<Text>Allows construction of factory extensions for air, sea or land units.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_WALLS">
+			<Text>Barricades</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_WALLS_STRATEGY">
+			<Text>Barricades increase a city's Defense Strength, making the city more difficult to capture.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_BARRACKS_HELP">
+			<Text>+10 XP for land Units.[NEWLINE]+15 [ICON_PERSONNEL] Personnel / turn.[NEWLINE]Allows construction of Military Academy and Military Base, needed to create projects and operations, respectively.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_MILITARY_ACADEMY_HELP">
+			<Text>+20 XP for all Units.[NEWLINE]+25 [ICON_PERSONNEL] Personnel / turn.[NEWLINE]City must have Barracks. Allows the creation of new weapon designs.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_BUILDING_MILITARY_BASE_HELP">
+			<Text>+15 XP for all Units.[NEWLINE]City must have Barracks. May allow the preparation of military operations.</Text>
+		</Replace>	
+		<Replace Tag="TXT_KEY_BUILDING_HARBOR_HELP">
+			<Text>Forms a [ICON_CONNECTED] Trade Route with the [ICON_CAPITAL] Capital over water (if they're not already [ICON_CONNECTED] connected by land).[NEWLINE]City must be built on the coast.</Text>
+		</Replace>	
+		
+		<!-- Minor Civilizations -->
+		<Row Tag="TXT_KEY_CIV_WWII_POLAND_PEDIA">
+			<Text>
+				The Sanacja movement controlled Poland until the start of World War II in 1939, when Nazi Germany invaded on 1 September and the Soviet invasion of Poland followed by breaking the Soviet–Polish Non-Aggression Pact on 17 September. Warsaw capitulated on 28 September 1939. As agreed in the Molotov–Ribbentrop Pact, Poland was split into two zones, one occupied by Germany while the eastern provinces fell under the control of the Soviet Union. (from Wikipedia)
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_POLAND_DESC">
+			<Text>Poland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_POLAND_SHORT_DESC">
+			<Text>Poland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_POLAND_ADJECTIVE">
+			<Text>Polish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NORWAY_PEDIA">
+			<Text>
+				Norway proclaimed its neutrality during World War II, but was invaded by German forces on 9 April 1940. Norway was unprepared for the German surprise attack, so military and naval resistance only lasted for two months. The armed forces in the north launched an offensive against the German forces in the Battles of Narvik, until they were forced to surrender on June 10 after losing British help following the Fall of France. (from Wikipedia)
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NORWAY_DESC">
+			<Text>Norway</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NORWAY_SHORT_DESC">
+			<Text>Norway</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NORWAY_ADJECTIVE">
+			<Text>Norwegian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWEDEN_PEDIA">
+			<Text>
+				Sweden remained officially neutral during World War II, although its neutrality has been disputed. Sweden was under German influence for much of the war, as ties to the rest of the world were cut off through blockades. The Swedish government felt that it was in no position to openly contest Germany, and therefore made some concessions. Sweden also supplied steel and machined parts to Germany throughout the war. However, Sweden supported Norwegian resistance, and in 1943 helped rescue Danish Jews from deportation to concentration camps. Sweden also supported Finland in the Winter War and the Continuation War with volunteers and materiel.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWEDEN_DESC">
+			<Text>Sweeden</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWEDEN_SHORT_DESC">
+			<Text>Sweeden</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWEDEN_ADJECTIVE">
+			<Text>Swedish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FINLAND_PEDIA">
+			<Text>
+				During World War II, Finland fought the Soviet Union twice: in the Winter War of 1939–40 after the Soviet Union had attacked Finland; and in the Continuation War of 1941–44, following Operation Barbarossa, in which Germany invaded the Soviet Union. For 872 days, German and Finnish armies besieged Leningrad, the Soviet Union's second largest city. The siege of Leningrad resulted in the deaths of some one million of the city's inhabitants. After fighting a major Soviet offensive in June/July 1944 to a standstill, Finland reached an armistice with the Soviet Union. This was followed by the Lapland War of 1944–45, when Finland forced the Germans out of northern Finland.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FINLAND_DESC">
+			<Text>Finland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FINLAND_SHORT_DESC">
+			<Text>Finland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FINLAND_ADJECTIVE">
+			<Text>Finish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DENMARK_PEDIA">
+			<Text>
+				Germany's invasion of Denmark on 9 April 1940 – code named Operation Weserübung – met only two hours of military resistance before the Danish government surrendered. Economic co-operation between Germany and Denmark continued until 1943, when the Danish government refused further co-operation and its navy sank most of its ships and sent as many of their officers as they could to neutral Sweden. During the war, the government was helpful towards the Danish Jewish minority, and the Danish resistance performed a rescue operation that managed to get most of them to Sweden and safety shortly before the Germans planned to round up the Danish Jews.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DENMARK_DESC">
+			<Text>Denmark</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DENMARK_SHORT_DESC">
+			<Text>Denmark</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DENMARK_ADJECTIVE">
+			<Text>Danish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWITZERLAND_PEDIA">
+			<Text>
+				During World War II, Switzerland was able to remain independent through a combination of military deterrence, concessions to Germany, and good fortune as larger events during the war delayed an invasion. Detailed plans were drawn up by the Germans, but never used. Under General Henri Guisan, a massive mobilisation of militia forces was ordered. The Swiss military strategy was changed from one of static defence at the borders to protect the economic heartland, to one of organised long-term attrition and withdrawal to strong, well-stockpiled positions high in the Alps known as the Reduit. Switzerland was an important base for espionage by both sides in the conflict and often mediated communications between the Axis and Allied powers.[NEWLINE][NEWLINE]
+				Switzerland's trade was blockaded by both the Allies and by the Axis. Economic cooperation and extension of credit to the Third Reich varied according to the perceived likelihood of invasion and the availability of other trading partners. Concessions reached a peak after a crucial rail link through Vichy France was severed in 1942, leaving Switzerland completely surrounded by the Axis. Over the course of the war, Switzerland interned over 300,000 refugees and the International Red Cross, based in Geneva, played an important part during the conflict. Strict immigration and asylum policies as well as the financial relationships with Nazi Germany raised controversy but not until the end of the 20th century, carrying on to this day with some Swiss banks and entities still refusing to surrender the assets deposited by victims of Nazi persecution.[NEWLINE][NEWLINE]
+				During the war, the Swiss Air Force engaged aircraft of both sides, shooting down 11 intruding Luftwaffe planes in May and June 1940, then forcing down other intruders after a change of policy following threats from Germany. The fact that the Swiss Air Force consistently beat the Luftwaffe was a recurring embarrassment for Hitler in World War II. The Allies acknowledged this, but the Allied Air Forces also many times intruded Swiss Air Space and made raids on several cities during the War. Over 100 Allied bombers and their crews were interned during the war. During 1944–45, Allied bombers mistakenly bombed a few places in Switzerland, among which were the cities of Schaffhausen, Basel and Zurich.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWITZERLAND_DESC">
+			<Text>Switzerland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWITZERLAND_SHORT_DESC">
+			<Text>Switzerland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SWITZERLAND_ADJECTIVE">
+			<Text>Swiss</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRELAND_PEDIA">
+			<Text>
+				The Ireland state was nominally neutral during World War II, a period known within the state as the "Emergency", though behind the scenes it worked closely with the Allies; for example the date of the D-Day Normandy landings was decided on the basis of transatlantic weather reports supplied by the Irish state. It is estimated that about 100,000 men from Ireland took part, with that number roughly evenly divided between Northern Ireland and the southern state. Tens of thousands more men who enlisted in Britain also gave next-of-kin addresses in Ireland, so the true figure is much higher. Conversely, following the suicide of Adolf Hitler, de Valera, following diplomatic protocol, controversially offered condolences to the German ambassador. The state's decision to adopt neutrality was influenced by memories of the Anglo-Irish War and the Civil War, and the state's lack of military preparedness for involvement in a war.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRELAND_DESC">
+			<Text>Ireland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRELAND_SHORT_DESC">
+			<Text>Ireland</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRELAND_ADJECTIVE">
+			<Text>Irish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BALTIC_STATES_PEDIA">
+			<Text>
+				Following the Molotov-Ribbentrop Pact of 1939, the Soviet Army entered eastern Poland as well as military bases in the Baltic states which were granted after U.S.S.R. had threatened the three countries with military invasion. In June 1940, the Red Army occupied all of the territory of Estonia, Latvia, and Lithuania, and the Red Army installed new, pro-Soviet governments in all three countries. Following rigged elections, in which only pro-communist candidates were allowed to run, the newly "elected" parliaments of the three countries formally applied to "join" the U.S.S.R. in August 1940 and were annexed into it as the Estonian SSR, the Latvian SSR, and the Lithuanian SSR.[NEWLINE][NEWLINE]
+				The Soviet control of the Baltic states was interrupted by Nazi German invasion of this region in 1941. The German occupation lasted until late 1944 (in Courland, until early 1945), when the countries were reoccupied by the Red Army. In all three countries, Baltic partisans, known colloquially as the Forest Brothers, Latvian national partisans, and Lithuanian partisans (1944 – 53), waged unsuccessful guerrilla warfare against the Soviet occupation for the next eight years in a bid to regain their nations' independence.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BALTIC_STATES_DESC">
+			<Text>Baltic states</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BALTIC_STATES_SHORT_DESC">
+			<Text>Baltic states</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BALTIC_STATES_ADJECTIVE">
+			<Text>Balts</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NETHERLANDS_PEDIA">
+			<Text>
+				The Netherlands intended to remain neutral during the Second World War, although contingency plans involving the armies of Belgium, France and the United Kingdom were drawn up in case of German aggression. Despite this neutrality, Nazi Germany invaded the Netherlands on 10 May 1940 as part of their campaign against the Allied forces. French forces in the south and British ships in the west came to help but turned around quickly, evacuating many civilians and several thousand German prisoners of war from the German elite airborne divisions.[NEWLINE][NEWLINE]
+				The country was overrun in five days. Only after (but not because of) the bombing of Rotterdam, the main element of the Dutch army surrendered on 14 May 1940; although a Dutch and French force held the western part of Zeeland for some time after the surrender. The Kingdom as such, continued the war from the colonial empire; the government in exile resided in London.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NETHERLANDS_DESC">
+			<Text>Netherlands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NETHERLANDS_SHORT_DESC">
+			<Text>Netherlands</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NETHERLANDS_ADJECTIVE">
+			<Text>Dutch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BELGIUM_PEDIA">
+			<Text>
+				On 10 May 1940, Germany's armed forces, the Wehrmacht, invaded Luxembourg, The Netherlands, and Belgium under the operational plan Fall Gelb (Case Yellow). The Allied Armies attempted to halt the German Army in Belgium, believing it to be the main German thrust. After the French had fully committed the best of the Allied Armies to Belgium between 10 and 12 May, the Germans enacted the second phase of their operation, a break-through, or sickle cut, through the Ardennes, and advanced towards the English Channel. The German Army (Heer) reached the Channel after five days, encircling the Allied Armies. The Germans gradually reduced the pocket of Allied forces, forcing them back to the sea. The Belgian Army surrendered on 28 May 1940, ending the battle.[NEWLINE][NEWLINE]
+				The Battle of Belgium included the first tank battle of the war, the Battle of Hannut. It was the largest tank battle in history up to that date but was later surpassed by the battles of the North African campaign and the Eastern Front. The battle also included the Battle of Fort Eben-Emael, the first strategic airborne operation using paratroopers.[NEWLINE][NEWLINE]
+				The German official history stated that in the 18 days of bitter fighting, the Belgian Army were tough opponents, and spoke of the "extraordinary bravery" of its soldiers. The Belgian collapse forced the Allied withdrawal from continental Europe. The British Royal Navy evacuated Belgian ports during Operation Dynamo, allowing the British Army to escape and continue military operations. Belgium was occupied by the Germans until the winter of 1944–1945, when it was liberated by the Western Alliance.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BELGIUM_DESC">
+			<Text>Belgium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BELGIUM_SHORT_DESC">
+			<Text>Belgium</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BELGIUM_ADJECTIVE">
+			<Text>Belgian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_YUGOSLAVIA_PEDIA">
+			<Text>
+				On April 6, 1941, German, Italian and Hungarian forces attacked Yugoslavia. The German Air Force (Luftwaffe) bombed Belgrade and other major Yugoslav cities. On April 17, representatives of Yugoslavia's various regions signed an armistice with Germany in Belgrade, ending 11 days of resistance against the invading German Army (Wehrmacht Heer). More than 300,000 Yugoslav officers and soldiers were taken prisoner.[NEWLINE][NEWLINE]
+				The Axis Powers occupied Yugoslavia and split it up. The Independent State of Croatia was established as a Nazi satellite state, ruled by the fascist militia known as the Ustaše that came into existence in 1929, but was relatively limited in its activities until 1941. German troops occupied Bosnia and Herzegovina as well as part of Serbia and Slovenia, while other parts of the country were occupied by Bulgaria, Hungary, and Italy. From 1941-45, the Croatian Ustaše regime murdered around 500,000 people, 250,000 were expelled, and another 200,000 were forced to convert to Catholicism; the victims were predominantly Serbs but included 37,000 Jews.[NEWLINE][NEWLINE]
+				From the start, the Yugoslav resistance forces consisted of two factions: the communist-led Yugoslav Partisans and the royalist Chetniks, with the former receiving Allied recognition only at the Tehran conference (1943). The heavily pro-Serbian Chetniks were led by Draža Mihajlović, while the pan-Yugoslav oriented Partisans were led by Josip Broz Tito.[NEWLINE][NEWLINE]
+				The Partisans initiated a guerrilla campaign that developed into the largest resistance army in occupied Western and Central Europe. The Chetniks were initially supported by the exiled royal government as well as the Allies, they but soon focused increasingly on combating the Partisans rather than the occupying Axis forces. By the end of the war, the Chetnik movement transformed into a collaborationist Serb nationalist militia completely dependent on Axis supplies. The highly mobile Partisans, however, carried on their guerrilla warfare with great success. Most notable of the victories against the occupying forces were the battles of Neretva and Sutjeska.[NEWLINE][NEWLINE]
+				On November 25, 1942, the Anti-Fascist Council of National Liberation of Yugoslavia was convened in Bihać, modern day Bosnia and Herzegovina. The council reconvened on November 29, 1943, in Jajce, also in Bosnia and Herzegovina, and established the basis for post-war organization of the country, establishing a federation (this date was celebrated as Republic Day after the war).[NEWLINE][NEWLINE]
+				The Yugoslav Partisans were able to expel the Axis from Serbia in 1944 and the rest of Yugoslavia in 1945. The Red Army provided limited assistance with the liberation of Belgrade and withdrew after the war was over. In May 1945, the Partisans met with Allied forces outside former Yugoslav borders, after also taking over Trieste and parts of the southern Austrian provinces of Styria and Carinthia. However, the Partisans withdrew from Trieste in June of the same year.[NEWLINE][NEWLINE]
+				Western attempts to reunite the Partisans, who denied the supremacy of the old government of the Kingdom of Yugoslavia, and the émigrés loyal to the king led to the Tito-Šubašić Agreement in June 1944; however, Marshal Josip Broz Tito was seen as a national hero by the citizens and was elected by referendum to lead the new independent communist state, starting as a prime minister.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_YUGOSLAVIA_DESC">
+			<Text>Yugoslavia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_YUGOSLAVIA_SHORT_DESC">
+			<Text>Yugoslavia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_YUGOSLAVIA_ADJECTIVE">
+			<Text>Yugoslav</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_HUNGARY_PEDIA">
+			<Text>
+				The Germans and Italians granted back to Hungary a part of southern Czechoslovakia and Subcarpathia in the First Vienna Award of 1938, and then northern Transylvania in the Second Vienna Award of 1940. In 1941, the Hungarian army took part in the invasion of Yugoslavia, regaining some more territories. On 22 June 1941, Germany invaded the Soviet Union under Operation Barbarossa; Hungary joined the German effort and declared war on the Soviet Union, and formally entered World War II on the side of the Axis Powers. In late 1941, the Hungarian troops on the Eastern Front experienced success at the Battle of Uman. By 1943, after the Hungarian Second Army suffered extremely heavy losses at the River Don, the Hungarian government sought to negotiate a surrender with the Allies. In 1944, as a result of this duplicity, German troops occupied Hungary in what was known as Operation Margarethe. Miklós Horthy made a token effort to disengage Hungary from the war, but he was replaced by a puppet government under the pro-German Prime Minister Ferenc Szálasi of the Arrow Cross Party.[NEWLINE][NEWLINE]
+				In late 1944, Hungarian troops on the Eastern Front again experienced success at the Battle of Debrecen, but this was followed immediately by the Soviet invasion of Hungary and the Battle of Budapest. During the German occupation in May–June 1944, the Arrow Cross Party and Hungarian police deported nearly 440,000 Jews, mostly to Auschwitz. The Swedish Diplomat Raoul Wallenberg managed to save a considerable number of Hungarian Jews by giving them Swedish passports, but when the Soviets arrived, he was arrested as a spy and disappeared. Rudolf Kastner (original spelling Kasztner), one of the leaders of the Hungarian Aid and Rescue Committee, negotiated with senior SS officers such as Adolf Eichmann to allow a number of Jews to escape in exchange for money, gold, and diamonds. Other diplomats also organized false papers and safe houses for Jews in Budapest and hundreds of Hungarian people were executed by the Arrow Cross Party for sheltering Jews.[NEWLINE][NEWLINE]
+				The war left Hungary devastated destroying over 60% of the economy and causing huge loss of life. On 13 February 1945, the Hungarian capital city surrendered unconditionally. By the agreement between the Czechoslovakian president Edvard Beneš and Joseph Stalin, wild expulsions of Hungarians from Czechoslovakia and Slovaks from Hungary started. 250,000 ethnic Germans were also transferred to Germany pursuant to article XIII of the Potsdam Protocol of 2 August 1945.[NEWLINE][NEWLINE]
+				The territories regained with the Vienna Awards and during World War II, were again lost by Hungary with the Paris Peace Treaty in 1947.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_HUNGARY_DESC">
+			<Text>Hungary</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_HUNGARY_SHORT_DESC">
+			<Text>Hungary</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_HUNGARY_ADJECTIVE">
+			<Text>Hungarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GREECE_PEDIA">
+			<Text>
+				Despite the country's numerically small and ill-equipped armed forces, Greece made a decisive contribution to the Allied efforts in World War II. At the start of the war Greece sided with the Allies and refused to give in to Italian demands. Italy invaded Greece by way of Albania on 28 October 1940, but Greek troops repelled the invaders after a bitter struggle. This marked the first Allied victory in the war.[NEWLINE][NEWLINE]
+				Primarily to secure his strategic southern flank, German dictator Adolf Hitler reluctantly stepped in and launched the Battle of Greece. Troops from Germany, Bulgaria, and Italy successfully invaded Greece, through Yugoslavia, overcoming Greek, British, Australian, and New Zealand units.[NEWLINE][NEWLINE]
+				On 20 May 1941, the Germans attempted to seize Crete with a large attack by paratroops—with the aim of reducing the threat of a counter-offensive by Allied forces in Egypt—but faced heavy resistance. The Greek campaign might have delayed German military plans against Soviet Union and the heavy losses of German paratroopers led the Germans to launch no further large-scale air-invasions.[NEWLINE][NEWLINE]
+				During the years of Occupation of Greece by Nazi Germany, thousands of Greeks died in direct combat, in concentration camps, or of starvation. The occupiers murdered the greater part of the Jewish community despite efforts by the Greek Orthodox Church and many other Christian Greeks to shelter the Jews. The economy of Greece was devastated.[NEWLINE][NEWLINE]
+				When the Soviet Army began its drive across Romania in August 1944, the German Army in Greece began withdrawing north and northwestward from Greece into Yugoslavia and Albania to avoid being cut off in Greece. Hence, the German occupation of Greece ended in October 1944. British troops landed on 4 October in Patras, and entered Athens at October 13.[NEWLINE][NEWLINE]
+				During the period between 1942 and 1944, known as the first phase of the greek civil wars, marxist and non-Marxist resistance groups fought each other in a fratricidal conflict to establish the leadership of the Greek resistance movement. In the second phase (1944) the ascendant communists, in military control of most of Greece, confronted the returning Greek government in exile, which had been formed under Western Allied auspices in Cairo and originally included six KKE-affiliated ministers. In the third phase (commonly called the "Third Round" by the Communists) (1946–1949), guerrilla forces controlled by KKE fought against the internationally recognized Greek Government which was formed after elections boycotted by KKE.[NEWLINE][NEWLINE]
+				The civil war left Greece with a legacy of political polarization; as a result, Greece also entered into alliance with the United States and joined NATO, while relationships with its Communist northern neighbours, both pro-Soviet and neutral, became strained.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GREECE_DESC">
+			<Text>Greece</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GREECE_SHORT_DESC">
+			<Text>Greece</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_GREECE_ADJECTIVE">
+			<Text>Greek</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BULGARIA_PEDIA">
+			<Text>
+				In the 1920s and 1930s Bulgaria suffered political unrest, which led to the establishment of a royal authoritarian dictatorship by Tsar Boris III (reigned 1918–1943). After regaining control of Southern Dobrudzha in 1940, Bulgaria entered World War II in 1941 as a member of the Axis. However, it declined to participate in Operation Barbarossa and never declared war on the USSR, and saved its Jewish population from deportation to concentration camps by repeatedly postponing compliance with German demands, offering various rationales. In March 1943 almost 12,000 Jews in Thrace and Macedonia, both of which were administered by the Bulgarian government on behalf of the Nazis, were deported to Auschwitz and Treblinka. In the summer of 1943 Boris III died suddenly, an event which pushed the country into political turmoil as the war turned against Nazi Germany and the Communist guerilla movement gained more power.[NEWLINE][NEWLINE]
+				In September 1944 the Communist-dominated Fatherland Front took power, following strikes and unrest, ending the alliance with Nazi Germany and joining the Allied side until the end of the war in 1945. The Communist uprising of 9 September 1944 led to the abolition of monarchic rule, but it was not until 1946 that a people's republic was established. It came under the Soviet sphere of influence, with Georgi Dimitrov (1946–1949) as the foremost Bulgarian political leader.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BULGARIA_DESC">
+			<Text>Bulgaria</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BULGARIA_SHORT_DESC">
+			<Text>Bulgaria</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BULGARIA_ADJECTIVE">
+			<Text>Bulgarian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ROMANIA_PEDIA">
+			<Text>
+				During the Second World War, Romania tried again to remain neutral, but on 28 June 1940, it received a Soviet ultimatum with an implied threat of invasion in the event of non-compliance. Under Nazi and Soviet pressure, the Romanian administration and the army were forced to retreat from Bessarabia as well from northern Bukovina to avoid war. This, in combination with other factors, prompted the government to join the Axis. Thereafter, southern Dobruja was ceded to Bulgaria, while Hungary received Northern Transylvania as result of an Axis arbitration.[NEWLINE][NEWLINE]
+				The authoritarian King Carol II abdicated in 1940, and succeeded by the National Legionary State, in which power was shared by Ion Antonescu and the Iron Guard. Within months, Antonescu had crushed the Iron Guard, and the subsequent year Romania entered the war on the side of the Axis powers. During the war, Romania was the most important source of oil for Nazi Germany, which attracted multiple bombing raids by the Allies. By means of the Axis invasion of the Soviet Union, Romania recovered Bessarabia and northern Bukovina from the Soviet Russia, under the leadership of general Ion Antonescu. The Antonescu regime played a major role in the Holocaust, following to a lesser extent the Nazi policy of oppression and massacre of the Jews, and Romma, primarily in the Eastern territories Romania recovered or occupied from the Soviet Union (Transnistria) and in Moldavia.[NEWLINE][NEWLINE]
+				In August 1944, Antonescu was toppled and arrested by King Michael I of Romania and Romania changed sides and joined the Allies. But its role in the defeat of Nazi Germany was not recognized by the Paris Peace Conference of 1947.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ROMANIA_DESC">
+			<Text>Romania</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ROMANIA_SHORT_DESC">
+			<Text>Romania</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ROMANIA_ADJECTIVE">
+			<Text>Romanian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_TURKEY_PEDIA">
+			<Text>
+				Turkey remained neutral during most of World War II but entered on the side of the Allies on February 23, 1945, as a ceremonial gesture and in 1945 became a charter member of the United Nations. Difficulties faced by Greece after the war in quelling a communist rebellion, along with demands by the Soviet Union for military bases in the Turkish Straits, prompted the United States to declare the Truman Doctrine in 1947. The doctrine enunciated American intentions to guarantee the security of Turkey and Greece, and resulted in large-scale U.S. military and economic support.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_TURKEY_DESC">
+			<Text>Turkey</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_TURKEY_SHORT_DESC">
+			<Text>Turkey</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_TURKEY_ADJECTIVE">
+			<Text>Turkish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_EGYPT_PEDIA">
+			<Text>
+				In September 1940, Italian dictator Benito Mussolini sent Italian forces stationed in Libya to launch an invasion into British held Egypt and set up defensive forts at Sidi Barrani.[NEWLINE][NEWLINE]
+				Allied forces, though greatly outnumbered, launched the counter-attack Operation Compass. It was more successful than planned and resulted in massive numbers of Italian prisoners and the advance of the Allied forces up to El Agheila. This stunning defeat of Italian forces did not go unnoticed and soon the Deutsches Afrikakorps, commanded by Erwin Rommel were sent in to reinforce them.[NEWLINE][NEWLINE]
+				Adolf Hitler sent his army to North Africa starting in February 1941. Rommel's Afrikakorps coming from victories at Tobruk in Libya, and in a classic blitzkrieg, comprehensively outfought British forces. Within weeks the British had been pushed back into Egypt. Rommel's offensive was eventually stopped at the small railway halt of El Alamein, just 150 miles from Cairo.[NEWLINE][NEWLINE]
+				By July 1942 the German had struck deep into Egypt, threatening the vital Allied supply line across the Suez Canal. Faced with overextended supply lines and lack of reinforcements and yet well aware of massive Allied reinforcements arriving, Rommel decided to strike at the Allies while their build-up was still not complete. This attack on 30 August 1942 at Alam Halfa failed, and expecting a counterattack by Montgomery's Eighth Army, the Afrika Korps dug in.[NEWLINE][NEWLINE]
+				The leadership of the United Kingdom's General Bernard Montgomery at the Second Battle of El Alamein marked a significant turning point of World War II and was the first major victory by British Commonwealth forces over the German Army. The battle lasted from October 23 to November 3, 1942. Following the First Battle of El Alamein, which had stalled the Axis advance, British general Bernard Montgomery took command of the Eighth Army from Claude Auchinleck in August 1942. Success in the battle turned the tide in the North African Campaign. Some historians believe that the battle, along with the Battle of Stalingrad, were the two major Allied victories that contributed to the eventual defeat of Nazi Germany.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_EGYPT_DESC">
+			<Text>Egypt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_EGYPT_SHORT_DESC">
+			<Text>Egypt</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_EGYPT_ADJECTIVE">
+			<Text>Egyption</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BRITISH_COMMONWEALTH_PEDIA">
+			<Text>
+				When the United Kingdom declared war on Nazi Germany at the outset of World War II, it controlled, to varying degrees, many crown colonies, protectorates across the world and the Indian Empire. It also maintained unique political ties to five independent dominions as part of the British Commonwealth (a name popularised during World War I, which became official after the Balfour Declaration of 1926), Australia, Canada, South Africa, New Zealand, and Ireland. While Ireland remained neutral, the remaining Commonwealth nations joined the war on Britain's side.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BRITISH_COMMONWEALTH_DESC">
+			<Text>British Commonwealth Nations</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BRITISH_COMMONWEALTH_SHORT_DESC">
+			<Text>Commonwealth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_BRITISH_COMMONWEALTH_ADJECTIVE">
+			<Text>Commonwealth</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRENCH_COLONY_PEDIA">
+			<Text>
+				The French Colonial Empire, constituted the overseas colonies, protectorates and mandate territories that came under French rule from the 16th century onward.			
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRENCH_COLONY_DESC">
+			<Text>French Colonial Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRENCH_COLONY_SHORT_DESC">
+			<Text>French Colony</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_FRENCH_COLONY_ADJECTIVE">
+			<Text>French Colonial</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALIAN_EMPIRE_PEDIA">
+			<Text>
+				The Italian Empire (Italian: Impero Italiano) comprised the colonies, protectorates, concessions, dependencies and trust territories of the Kingdom of Italy			
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALIAN_EMPIRE_DESC">
+			<Text>Italian Colonial Empire</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALIAN_EMPIRE_SHORT_DESC">
+			<Text>Italian Colony</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ITALIAN_EMPIRE_ADJECTIVE">
+			<Text>Italian Colonial</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NEPAL_PEDIA">
+			<Text>
+				Following the German invasion of Poland, the Kingdom of Nepal declared war on Germany on September 4, 1939. Once Japan entered the conflict, sixteen battalions of the Royal Nepalese Army fought on the Burmese front. In addition to military support, Nepal contributed guns, equipment as well as hundreds of thousand of pounds of tea, sugar and raw materials such as timber to the Allied war effort.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NEPAL_DESC">
+			<Text>Kingdom of Nepal </Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NEPAL_SHORT_DESC">
+			<Text>Nepal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_NEPAL_ADJECTIVE">
+			<Text>Nepalese</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DUTCH_EAST_INDIES_PEDIA">
+			<Text>
+				The Dutch East Indies was a Dutch colony. It was formed from the nationalised colonies of the Dutch East India Company, which came under the administration of the Dutch government in 1800.		
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DUTCH_EAST_INDIES_DESC">
+			<Text>Dutch East Indies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DUTCH_EAST_INDIES_SHORT_DESC">
+			<Text>Dutch East Indies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_DUTCH_EAST_INDIES_ADJECTIVE">
+			<Text>East Indies</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_LATIN_AMERICA_PEDIA">
+			<Text>
+				The history of Latin America during World War II is important because of the significant economic, political, and military changes that occurred throughout much of the region as a result of the war.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_LATIN_AMERICA_DESC">
+			<Text>Countries of Latin America</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_LATIN_AMERICA_SHORT_DESC">
+			<Text>Latin America</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_LATIN_AMERICA_ADJECTIVE">
+			<Text>Latin Americas</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ARABIA_PEDIA">
+			<Text>
+				Saudi Arabia was founded in 1932 with the union of the kingdoms of the Hejaz and Nejd. Although the territory within the Kingdom of Saudi Arabia's boundaries is largely arid desert or rocky infertile terrain - home for much of its history to tribal nomadic societies with only rudimentary state structures - it has twice in world history had a global impact. The first was in the 7th century when it became the cradle of Islam. The second was from the mid-20th century when the discovery of vast oil deposits propelled it into a key economic and geo-political role. At other times, the region existed in relative obscurity and isolation, although from the 7th century the cities of Mecca and Medina had the highest spiritual significance for the Islamic world, Mecca being the destination for the Hajj annual pilgrimage.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ARABIA_DESC">
+			<Text>Saudi Arabia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ARABIA_SHORT_DESC">
+			<Text>Saudi Arabia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_ARABIA_ADJECTIVE">
+			<Text>Arabian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAQ_PEDIA">
+			<Text>
+				Britain granted independence to Iraq in 1932, on the urging of King Faisal, though the British retained military bases and transit rights for their forces. King Ghazi ruled as a figurehead after King Faisal's death in 1933, while undermined by attempted military coups, until his death in 1939. Ghazi was followed by his under age son, Faisal II. 'Abd al-Ilah served as Regent during Faisal's minority.[NEWLINE][NEWLINE]
+				On 1 April 1941, Rashid Ali al-Gaylani and members of the Golden Square staged a coup d'état and overthrew the government of 'Abd al-Ilah. During the subsequent Anglo-Iraqi War, the United Kingdom invaded Iraq for fear that the Rashid Ali government might cut oil supplies to Western nations because of his links to the Axis powers. The war started on 2 May and an armistice was signed 31 May.[NEWLINE][NEWLINE]
+				A military occupation followed the restoration of the pre-coup government of the Hashemite monarchy. The occupation ended on 26 October 1947. The rulers during the occupation and the remainder of the Hashemite monarchy were Nuri al-Said, the autocratic Prime Minister, who also ruled from 1930–1932, and 'Abd al-Ilah, the former Regent who now served as an adviser to King Faisal II.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAQ_DESC">
+			<Text>Iraq</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAQ_SHORT_DESC">
+			<Text>Iraq</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAQ_ADJECTIVE">
+			<Text>Iraqi</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAN_PEDIA">
+			<Text>
+				Reza Shah tried to avoid involvement with Britain and the Soviet Union. Though many of his development projects required foreign technical expertise, he avoided awarding contracts to British and Soviet companies. Although Britain, through its ownership of the Anglo-Iranian Oil Company, controlled all of Iran's oil resources, Reza Shah preferred to obtain technical assistance from Germany, France, Italy, and other European countries. This created problems for Iran after 1939, when Germany and Britain became enemies in World War II. Reza Shah proclaimed Iran as a neutral country, but Britain insisted that German engineers and technicians in Iran were spies with missions to sabotage British oil facilities in southwestern Iran. Britain demanded that Iran expel all German citizens, but Reza Shah refused, claiming this would adversely impact his development projects.[NEWLINE][NEWLINE]
+				Following Germany's invasion of the Soviet Union in June 1941, Britain and the Soviet Union became allies. Britain and the USSR saw the newly-opened Trans-Iranian Railway as an attractive route to transport supplies from the Persian Gulf to the Soviet Union. In August 1941, because Reza Shah refused to expel the German nationals, Britain and the Soviet Union invaded Iran, arrested the Shah and sent him into exile, taking control of Iran's communications and railroad. In 1942 the United States, an ally of Britain and the USSR during the war, sent a military force to Iran to help maintain and operate sections of the railroad. Over the next few months, the three nations took control of Iran's oil resources and secured a supply corridor for themselves. Reza Shah's regime collapsed, and the American, British and Soviet authorities limited the powers of the rump government that remained. They permitted Reza Shah's son, Mohammad Reza Pahlavi to accede to the throne.[NEWLINE][NEWLINE]
+				In January 1942 they signed an agreement with Iran to respect Iran's independence and to withdraw their troops within six months of the war's end. In 1943 at the Tehran Conference, the United States reaffirmed this commitment. In 1945, the USSR refused to announce a timetable to leave Iran's northwestern provinces of East Azerbaijan and West Azerbaijan, where Soviet-supported autonomy movements had developed. At the time, the Tudeh Party of Iran, a communist party that was already influential and had parliamentary representation, was becoming increasingly militant, especially in the North. This promoted actions from the side of the government, including attempts of the Iranian armed forces to restore order in the Northern provinces. While the Tudeh headquarters in Tehran were occupied and the Isfahan branch crushed, the Soviet troops present in the Northern parts of the country prevented the Iranian forces from entering. Thus, by the late autumn of 1945, the North was virtually controlled by the Tudeh and its affiliates.[NEWLINE][NEWLINE]
+				The USSR withdrew its troops in May 1946, but tensions continued for several months. This episode was one of the precipitating events of the emerging Cold War, the postwar rivalry between the United States and its allies, and the USSR and its allies.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAN_DESC">
+			<Text>Iran</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAN_SHORT_DESC">
+			<Text>Iran</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_IRAN_ADJECTIVE">
+			<Text>Iranian</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SPAIN_PEDIA">
+			<Text>
+				From the Spanish Civil War (1936–39), the Nationalist forces, led by General Francisco Franco, emerged victorious with the support of Nazi Germany and Fascist Italy. Popular Front government side was supported by the Soviet Union and Mexico and International Brigades, including the American Abraham Lincoln Brigade, but it was not supported officially by the Western powers due to the British-led policy of Non-Intervention.[NEWLINE][NEWLINE]
+				The Civil War claimed the lives of over 500,000 people and caused the flight of up to a half-million citizens. Most of their descendants now live in Latin American countries, with some 300,000 in Argentina alone. The Spanish Civil War has been called the first battle of the Second World War; under Franco the country was neutral in the Second World War, although sympathetic to the Axis.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SPAIN_DESC">
+			<Text>Spain</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SPAIN_SHORT_DESC">
+			<Text>Spain</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_SPAIN_ADJECTIVE">
+			<Text>Spanish</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_PORTUGAL_PEDIA">
+			<Text>
+				Britain granted independence to Iraq in 1932, on the urging of King Faisal, though the British retained military bases and transit rights for their forces. King Ghazi ruled as a figurehead after King Faisal's death in 1933, while undermined by attempted military coups, until his death in 1939. Ghazi was followed by his under age son, Faisal II. 'Abd al-Ilah served as Regent during Faisal's minority.[NEWLINE][NEWLINE]
+				On 1 April 1941, Rashid Ali al-Gaylani and members of the Golden Square staged a coup d'état and overthrew the government of 'Abd al-Ilah. During the subsequent Anglo-Iraqi War, the United Kingdom invaded Iraq for fear that the Rashid Ali government might cut oil supplies to Western nations because of his links to the Axis powers. The war started on 2 May and an armistice was signed 31 May.[NEWLINE][NEWLINE]
+				A military occupation followed the restoration of the pre-coup government of the Hashemite monarchy. The occupation ended on 26 October 1947. The rulers during the occupation and the remainder of the Hashemite monarchy were Nuri al-Said, the autocratic Prime Minister, who also ruled from 1930–1932, and 'Abd al-Ilah, the former Regent who now served as an adviser to King Faisal II.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_PORTUGAL_DESC">
+			<Text>Portugal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_PORTUGAL_SHORT_DESC">
+			<Text>Portuagal</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_PORTUGAL_ADJECTIVE">
+			<Text>Portuguese</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_VICHY_PEDIA">
+			<Text>
+				Vichy France, Vichy Regime, or Vichy Government, are common terms used to describe the government of France that allied with the Axis powers for industrial purposes from July 1940 to August 1944. This government succeeded the Third Republic and preceded the Provisional Government of the French Republic. It officially called itself the French State (État Français), in contrast with the previous designation, the French Republic.[NEWLINE][NEWLINE]
+				Marshal Philippe Pétain proclaimed the government following the military defeat of France by Germany during World War II and the vote by the National Assembly on 10 July 1940. This vote granted extraordinary powers to Pétain, the last Président du Conseil (Prime Minister) of the Third Republic, who then took the additional title Chef de l'État Français ("Chief of the French State"). Pétain headed the reactionary program of the so-called "Révolution nationale", aimed at "regenerating the nation."[NEWLINE][NEWLINE]
+				The Vichy regime maintained some legal authority in the northern zone of France (the Zone occupée), which was occupied by the German Wehrmacht. Its laws, however, were only applied where they did not contradict German ones. This meant that the regime was most powerful in the unoccupied southern "free zone", where its administrative centre of Vichy was located, until November 1942. After the landing of the Allied forces in North Africa on 8 November 1942, Hitler ordered the occupation of France's free zone, after which the former free zone was subject to German rule like the northern zone, except for a sliver along the Alps that was under Italian rule until September 1942.[NEWLINE][NEWLINE]
+				In the aftermath of the 1940 defeat, Pétain collaborated actively with the German occupying forces. Vichy forces refused to surrender or save the fleet at Mers-el-Kebir for the Allies and fought the Allied invasion of French-controlled Syria and Lebanon in June–July 1941, with just above 15% of the resulting prisoners of war electing to join Free French forces while the others were repatriated to metropolitan France to be demobilized. However, the military ties with Germany weakened over time. The Vichy-mandated Scuttling of the French fleet in Toulon stands in contrast to the Mers-el-Kebir episode of two years earlier, and the Vichy French forces put up limited resistance to the Allied invasion of North Africa, with more commanders and units in Africa joining the Free French forces. The Vichy leaders collaborated as far as ordering the French police and the local milice (militiamen) to go on raids to capture Jews and other minorities considered "undesirables" by Germany as well as political opponents and members of the Resistance, thus helping enforce German policy in occupied zones. Vichy also promulgated its own, German-inspired laws and policies that restricted political freedom and took rights away from foreigners and racial minorities.[NEWLINE][NEWLINE]
+				The legitimacy of Vichy France and Pétain's leadership was constantly challenged by the exiled General Charles de Gaulle, who claimed to represent the legitimacy and continuity of the French government. Public opinion turned against the Vichy regime and the occupying German forces over time, and resistance to them grew within France. Following the Allies' invasion of France in Operation Overlord, de Gaulle proclaimed the Provisional Government of the French Republic (GPRF) in June 1944. After the Liberation of Paris in August, the GPRF installed itself in Paris on 31 August. The GPRF was recognized as the legitimate government of France by the Allies on 23 October 1944.[NEWLINE][NEWLINE]
+				On 20 August 1944, the Vichy officials and chief supporters were moved to Sigmaringen in Germany and there established a government in exile, headed by Fernand de Brinon, until early April 1945. Most of the Vichy regime's leaders were subsequently sentenced by the GPRF and a number of them were executed. Pétain himself was sentenced to death for treason, but his sentence was commuted to life imprisonment.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_VICHY_DESC">
+			<Text>Vichy France</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_VICHY_SHORT_DESC">
+			<Text>Vichy France</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_VICHY_ADJECTIVE">
+			<Text>Vichy France</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_THAILAND_PEDIA">
+			<Text>
+				Thailand was nominally an ally of Japan at the beginning of the war. The country was ruled at first by Field Marshal Plaek Phibunsongkhram, a military dictator with nationalist leanings, under the Thai King. Thailand remained uninvolved when war broke out in Europe, but it took the opportunity of France's defeat to settle historical claims to parts of French Indochina.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_THAILAND_DESC">
+			<Text>Thailand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_THAILAND_SHORT_DESC">
+			<Text>Thailand</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_THAILAND_ADJECTIVE">
+			<Text>Thai</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_AFGHANISTAN_PEDIA">
+			<Text>
+				Afghanistan maintained its neutrality. It was neither invaded nor sent an invasion force from or to a foreign nation, and was relatively unaffected during the war.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_AFGHANISTAN_DESC">
+			<Text>Afghanistan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_AFGHANISTAN_SHORT_DESC">
+			<Text>Afghanistan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_AFGHANISTAN_ADJECTIVE">
+			<Text>Afghan</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_MONGOLIA_PEDIA">
+			<Text>
+				During the war, Outer Mongolia—officially the Mongolian People's Republic—was ruled by the communist government of Khorloogiin Choibalsan and was closely linked to the Soviet Union. Mongolia was considered a breakaway province of the Republic of China by most nations. Soviet–Mongolian relations were governed by a "gentlemen's agreement" from 27 November 1934, which was formalised in a mutual assistance pact on 12 March 1936. This treaty created a mutual defensive military alliance, and also pledged both parties to remove troops from the territory of the other when the need for military assistance had passed.
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_MONGOLIA_DESC">
+			<Text>Mongolia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_MONGOLIA_SHORT_DESC">
+			<Text>Mongolia</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_MONGOLIA_ADJECTIVE">
+			<Text>Mongols</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_REPUBLIC_OF_CHINA_PEDIA">
+			<Text>
+				Few Chinese had any illusions about Japanese desires on China. Hungry for raw materials and pressed by a growing population, Japan initiated the seizure of Manchuria in September 1931 and established ex-Qing emperor Puyi as head of the puppet state of Manchukuo in 1932. The loss of Manchuria, and its vast potential for industrial development and war industries, was a blow to the Kuomintang economy. The League of Nations, established at the end of World War I, was unable to act in the face of the Japanese defiance.			
+			</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_REPUBLIC_OF_CHINA_DESC">
+			<Text>Republic Of China</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_REPUBLIC_OF_CHINA_SHORT_DESC">
+			<Text>China</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV_WWII_REPUBLIC_OF_CHINA_ADJECTIVE">
+			<Text>Chinese</Text>
+		</Row>
+		
+		<!-- Military Projects -->
+		<Row Tag="TXT_KEY_OPERATION_WESERUBUNG">
+			<Text>Operation Weserübung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_WESERUBUNG_DESC">
+			<Text>Our generals have proposed to assemble a force of airborn divisions to secure the area around Narvik in Norway. Once the taskforce will be assembled, the assault will be launched immediatly if we have already declared war to Norway and Denmark, or when it will start, before French and British troops take the initiative there. They suggest to deploy a close naval support for those troops.</Text>
+		</Row>
+		<!-- Operation Seelöwe (UK invasion) -->
+		<Row Tag="TXT_KEY_OPERATION_SEELOWE">
+			<Text>Operation Seelöwe</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_SEELOWE_DESC">
+			<Text>After France, we must invade U.K. to eliminate all menace from the west before expanding to the east. The operation our generals are now planing is far more ambitious than any initial proposal, with the creation of two complete amphibious armies and numerous Fallschirmjagerdivision. Once completed this operation will only be launched if France has surrendered.</Text>
+		</Row>
+		<!-- Operation Norway (Invasion of Norway and Denmark) -->
+		<Row Tag="TXT_KEY_OPERATION_NORWAY">
+			<Text>Operation Weserübung</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_NORWAY_DESC">
+			<Text>Our Generals have devised a strategy to invade Norway and Denmark. This is Free because we have been prepared for such an event.</Text>
+		</Row>
+		<!-- Operation Fall Gelb (Invasion Plan of France, Netherlands and Belgium) -->
+		<Row Tag="TXT_KEY_OPERATION_FALLGELB">
+			<Text>Operation Fall Gelb</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_FALLGELB_DESC">
+			<Text>Our Generals have devised a strategy to invade France, the Netherlands and Belgium. This is Free because we have been prepared for such an event (AI Only).</Text>
+		</Row>
+		<!-- Operation Sonnenblume (German Support in Africa) -->
+		<Row Tag="TXT_KEY_OPERATION_SONNENBLUME">
+			<Text>Operation Sonnenblume</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_SONNENBLUME_DESC">
+			<Text>Our Allies in Italy have requested support in Africa, if we can drive them back we can take the Suez and have access to the oil rich Middle East. Our Generals are ready to devolope a plan and a "Afrika Korps" to support our Italian allies.</Text>
+		</Row>
+		<!-- Operation Torch (Invasion Plan of North Africa) -->
+		<Row Tag="TXT_KEY_OPERATION_TORCH">
+			<Text>Operation Torch</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_TORCH_DESC">
+			<Text>British Generals have suggested a plan to knock the Axis out of Africa, with the Allied army in the east we can crush the Italian, Vichy and German troops between our two armies. This plan will liberate many Vichy held cities and return them to Free France.</Text>
+		</Row>
+		<!-- Operation Motherland call (Defense of Russia) -->
+		<Row Tag="TXT_KEY_OPERATION_MOTHERLAND">
+			<Text>The Motherland Calls</Text>
+		</Row>
+		<Row Tag="TXT_KEY_OPERATION_MOTHERLAND_DESC">
+			<Text>Gather as much troops as possible from the eastern regions.</Text>
+		</Row>
 		
 		<!-- Replaced Texts -->
+		
 		<Replace Tag="TXT_KEY_BEGIN_GAME_BUTTON">
 			<Text>Go to War...</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_POP_WONDERS">
+			<Text>PROJECTS</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_CITYVIEW_UNEMPLOYED_TEXT">
+			<Text>Laborours</Text>
 		</Replace>
 		
 		<Replace Tag="TXT_KEY_INTERFACEMODE_AIR_SWEEP">
@@ -220,6 +1102,416 @@
 		<Replace Tag="TXT_KEY_INTERFACEMODE_AIR_SWEEP_HELP">
 			<Text>Order the unit to recon the targeted area and engage enemy fighters.</Text>
 		</Replace>
+		
+		<Replace Tag="TXT_KEY_UNIT_SUPPLY_REACHED_TOOLTIP">
+			<Text>Your nation can support {1_Num} Units.[NEWLINE]You are over that limit by {2_Num}[NEWLINE][COLOR_WARNING_TEXT] {3_Num}%[ICON_PRODUCTION] Production in cities.[ENDCOLOR][NEWLINE][ICON_BULLET] Cities supply = {4_Num} units.[NEWLINE][ICON_BULLET] Population supply = {5_Num} units.[NEWLINE][ICON_BULLET] Base supply = {6_Num} units.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_UNIT_SUPPLY_REACHED">
+			<Text>Army oversized: [COLOR_WARNING_TEXT]{1_Num}%[ICON_PRODUCTION][ENDCOLOR]</Text>
+		</Replace>
+		
+		<Row Tag="TXT_KEY_UNIT_SUPPLY_TOOLTIP">
+			<Text>Your nation can support {1_Num} Units.[NEWLINE]Your army is composed of {2_Num} units.[NEWLINE][ICON_BULLET] Cities supply = {3_Num} units.[NEWLINE][ICON_BULLET] Population supply = {4_Num} units.[NEWLINE][ICON_BULLET] Base supply = {5_Num} units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_SUPPLY">
+			<Text>Supply allows {1_Num} more Units</Text>
+		</Row>
+		
+		<!-- Captured Territory -->
+		
+		<Replace Tag="TXT_KEY_PLOT_CONTROL">
+			<Text>In control range of {2_Icon} {@1_CityName}.</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOT_CONTROL_LOST">
+			<Text>[COLOR_NEGATIVE_TEXT]Control lost ![ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_PLOT_CONTROL_GAINED">
+			<Text>[COLOR_POSITIVE_TEXT]Control gained ![ENDCOLOR]</Text>
+		</Replace>
+		
+		<!-- New Units -->
+		<Row Tag="TXT_KEY_UNIT_CONVOY">
+			<Text>Convoy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_HELP_CONVOY">
+			<Text>Escort the convoy to one of your cities.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_CONVOY_STRATEGY">
+			<Text>Convoy transport reinforcements for your nation.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_INDUSTRIAL_CONVOY_HEADING">
+			<Text>Convoy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_INDUSTRIAL_CONVOY_STATBOX">
+			<Text>missing stats</Text>
+		</Row>
+		<Row Tag="TXT_KEY_CIV5_INDUSTRIAL_CONVOY_TEXT">
+			<Text>Escort the convoy to one of your cities.</Text>
+		</Row>
+		
+		<Replace Tag="TXT_KEY_UNIT_HELP_FIELD_GUN">
+			<Text>Field Guns fire smaller shells with higher velocities and flatter trajectories than Howitzers. Combined with armor-piercing ammo they can inflict great casualties on armor units. This regiment-sized unit can stack with a Division unit.</Text>
+		</Replace>
+		
+		<!-- Unit promotions -->
+		<Row Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES">
+			<Text>Special Forces</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SPECIAL_FORCES_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Defense VS [COLOR_POSITIVE_TEXT]Ranged attacks[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 75% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Invisible in [COLOR_POSITIVE_TEXT]Forest/Jungle[ENDCOLOR].[NEWLINE]May withdraw from [COLOR_POSITIVE_TEXT]Melee Attacks[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.[NEWLINE]Can't capture [COLOR_NEGATIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_PARATROOPER">
+			<Text>Paratrooper</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_PARATROOPER_DESC">
+			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Ignore [COLOR_POSITIVE_TEXT]Terrains cost[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_INFANTRY">
+			<Text>Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INFANTRY_DESC">
+			<Text>+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_NAVAL_INFANTRY">
+			<Text>Naval Infantry</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NAVAL_INFANTRY_DESC">
+			<Text>+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No penalty for attacking from the sea or over a river.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_AMERICAN_MARINES">
+			<Text>Marines</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_AMERICAN_MARINES_DESC">
+			<Text>+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No penalty for attacking from the sea or over a river.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_FOREIGNLEGION">
+			<Text>From Cameron to Sidi Bel Abbes</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FRENCH_FOREIGNLEGION_DESC">
+			<Text>+ 33% [ICON_STRENGTH] Combat on [COLOR_POSITIVE_TEXT]Desert[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat when [COLOR_POSITIVE_TEXT]Defending[ENDCOLOR].[NEWLINE]+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Never retreating.[NEWLINE]No Combat penalty when out of Supply.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_GERMAN_SS_INFANTRY">
+			<Text>Waffen-SS</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_GERMAN_SS_INFANTRY_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]Never retreating.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_ARTILLERY">
+			<Text>Howitzer-Guns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ARTILLERY_DESC">
+			<Text>Can fire over obstacles.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea units[ENDCOLOR].[NEWLINE]Can provide [COLOR_POSITIVE_TEXT]support Fire[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Defensive First Strike[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Counter-Fire[ENDCOLOR].[NEWLINE]Can't attack [COLOR_NEGATIVE_TEXT]Submarines units[ENDCOLOR].[NEWLINE]May not melee attack, limited visibility.[NEWLINE]Can't capture [COLOR_NEGATIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_ARTILLERY">
+			<Text>Mobile Artillery</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_ARTILLERY_DESC">
+			<Text>Can fire over obstacles.[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun units[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea units[ENDCOLOR].[NEWLINE]Can provide [COLOR_POSITIVE_TEXT]support Fire[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Defensive First Strike[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Counter-Fire[ENDCOLOR].[NEWLINE]Can't attack [COLOR_NEGATIVE_TEXT]Submarines units[ENDCOLOR].[NEWLINE]May not melee attack, limited visibility.[NEWLINE]Can't capture [COLOR_NEGATIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FIELD_GUN">
+			<Text>Field Guns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIELD_GUN_DESC">
+			<Text>Direct fire only.[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea units[ENDCOLOR].[NEWLINE]Can provide [COLOR_POSITIVE_TEXT]support Fire[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Defensive First Strike[ENDCOLOR].[NEWLINE]Can use [COLOR_POSITIVE_TEXT]Counter-Fire[ENDCOLOR] against other Field Gun.[NEWLINE]Can't attack [COLOR_NEGATIVE_TEXT]Submarines units[ENDCOLOR].[NEWLINE]May not melee attack, limited visibility.[NEWLINE]Can't capture [COLOR_NEGATIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN">
+			<Text>Anti-Aircraft Guns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ANTI_AIRCRAFT_GUN_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air unit per turn.[NEWLINE]+ 300% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]Can't attack, limited visibility.[NEWLINE]Can't capture [COLOR_NEGATIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_AA_GUN">
+			<Text>Mobile Anti-Aircraft Guns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_AA_GUN_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air unit per turn.[NEWLINE]+ 200% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]can't attack, limited visibility.[NEWLINE]Can't capture [COLOR_POSITIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>		
+		<!-- (Autocannone 90/53) -->
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_AA_GUN_AUTOCANNONE">
+			<Text>Mobile AA/AT Guns</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MOBILE_AA_GUN_AUTOCANNONE_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air unit per turn.[NEWLINE]+ 200% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].[NEWLINE]+ 200% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR].[NEWLINE]can't attack, limited visibility.[NEWLINE]Can't capture [COLOR_POSITIVE_TEXT]Enemy territory[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK">
+			<Text>Light Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK_DESC">
+			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_CRUISER_TANK">
+			<Text>Cruiser Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CRUISER_TANK_DESC">
+			<Text>[NEWLINE]- 25% [ICON_STRENGTH] Combat in [COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_INFANTRY_TANK">
+			<Text>Light Infantry Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_INFANTRY_TANK_DESC">
+			<Text>+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 20% [ICON_STRENGTH] Combat in [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR].[NEWLINE]- 15% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_INFANTRY_TANK">
+			<Text>Infantry Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_INFANTRY_TANK_DESC">
+			<Text>+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 20% [ICON_STRENGTH] Combat in [COLOR_POSITIVE_TEXT]Defense[ENDCOLOR].[NEWLINE]- 15% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_TANK">
+			<Text>Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TANK_DESC">
+			<Text>- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_TANK">
+			<Text>Heavy Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_TANK_DESC">
+			<Text>+ 15% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can [COLOR_POSITIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_SUPER_HEAVY_TANK">
+			<Text>Super Heavy Tank</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUPER_HEAVY_TANK_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 66% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK_DESTROYER">
+			<Text>Light Tank Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_TANK_DESTROYER_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]Use [COLOR_POSITIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Defensive first strike VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Attack[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_TANK_DESTROYER">
+			<Text>Tank Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TANK_DESTROYER_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]Use [COLOR_POSITIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Defensive first strike VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Attack[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_TANK_DESTROYER">
+			<Text>Light Tank Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_TANK_DESTROYER_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]Use [COLOR_POSITIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Defensive first strike VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Attack[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_ASSAULT_GUN">
+			<Text>Assault Gun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ASSAULT_GUN_DESC">
+			<Text>+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] on [COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_ASSAULT_GUN">
+			<Text>Heavy Assault Gun</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_ASSAULT_GUN_DESC">
+			<Text>+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] on [COLOR_NEGATIVE_TEXT]Defense[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]No [COLOR_NEGATIVE_TEXT]terrain[ENDCOLOR] defensive bonus.[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]move[ENDCOLOR] after attacking.</Text>
+		</Row>
+		
+		<!-- AIR -->
+		
+		<Row Tag="TXT_KEY_PROMOTION_OLD_FIGHTER">
+			<Text>Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_OLD_FIGHTER_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]1[ENDCOLOR] Air unit per turn.[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 83% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER">
+			<Text>Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units per turn.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 83% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_2">
+			<Text>Modern Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_2_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units per turn.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 83% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat.</Text>
+		</Row>		
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_3">
+			<Text>Modern Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_3_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]3[ENDCOLOR] Air units per turn.[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 83% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JET_FIGHTER">
+			<Text>Jet Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JET_FIGHTER_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]4[ENDCOLOR] Air units per turn.[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]Can not perform [COLOR_NEGATIVE_TEXT]Bombing missions[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_BOMBER">
+			<Text>Fighter-Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FIGHTER_BOMBER_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]1[ENDCOLOR] Air unit per turn.[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_FIGHTER">
+			<Text>Heavy Fighter</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_FIGHTER_DESC">
+			<Text>Can intercept [COLOR_POSITIVE_TEXT]2[ENDCOLOR] Air units per turn.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Bomber[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Heavy Bomber[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] [COLOR_NEGATIVE_TEXT]Ranged[ENDCOLOR] Combat.[NEWLINE]- 75% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT">
+			<Text>Attack Aircraft</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_ATTACK_AIRCRAFT_DESC">
+			<Text>+ 150% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Fighters[ENDCOLOR] units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_NAVY_BOMBER">
+			<Text>Navy Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NAVY_BOMBER_DESC">
+			<Text>+ 90% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]+ 66% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 66% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]+ 15% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 33% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Fighters[ENDCOLOR] units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_TORPEDO_BOMBER">
+			<Text>Torpedo Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_TORPEDO_BOMBER_DESC">
+			<Text>+ 200% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Fighters[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_BOMBER">
+			<Text>Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BOMBER_DESC">
+			<Text>+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR].[NEWLINE]+ 20% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 75% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FAST_BOMBER">
+			<Text>Fast Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FAST_BOMBER_DESC">
+			<Text>25% chance to [COLOR_POSITIVE_TEXT]Evade interception[ENDCOLOR].[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FAST_BOMBER_2_DESC">
+			<Text>50% chance to [COLOR_POSITIVE_TEXT]Evade interception[ENDCOLOR].[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 50% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_JET_BOMBER">
+			<Text>Fast Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JET_BOMBER_DESC">
+			<Text>75% chance to [COLOR_POSITIVE_TEXT]Evade interception[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_JET_BOMBER_2_DESC">
+			<Text>90% chance to [COLOR_POSITIVE_TEXT]Evade interception[ENDCOLOR].[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER">
+			<Text>Heavy Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_HEAVY_BOMBER_DESC">
+			<Text>+ 75% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortifications[ENDCOLOR].[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Fortified Units[ENDCOLOR].[NEWLINE]- 35% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]- 50% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]- 70% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 75% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Armor[ENDCOLOR] units.[NEWLINE]- 95% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_BOMBER">
+			<Text>Fast Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_LIGHT_BOMBER_DESC">
+			<Text>[NEWLINE]+ 125% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 17% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Fighters[ENDCOLOR] units.</Text>
+		</Row>
+
+		<Row Tag="TXT_KEY_PROMOTION_NAVY_LIGHT_BOMBER">
+			<Text>Fast Bomber</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NAVY_LIGHT_BOMBER_DESC">
+			<Text>[NEWLINE]+ 125% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Gun[ENDCOLOR] units.[NEWLINE]+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Land[ENDCOLOR] units.[NEWLINE]+ 33% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] units.[NEWLINE]- 17% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Cities[ENDCOLOR].[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Fighters[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<!-- NAVAL -->
+		<Row Tag="TXT_KEY_PROMOTION_BATTLESHIP">
+			<Text>Battleship</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_BATTLESHIP_DESC">
+			<Text>Can fire over obstacles.[NEWLINE]- 25% [ICON_STRENGTH] Combat VS [COLOR_NEGATIVE_TEXT]Air[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER">
+			<Text>Carrier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER_DESC">
+			<Text>Can carry up to 3 embarked aircraft.[NEWLINE]May not attack, extended visibility.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER_2">
+			<Text>Carrier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER_2_DESC">
+			<Text>Can carry up to 5 embarked aircraft.[NEWLINE]May not attack, extended visibility.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER_3">
+			<Text>Carrier</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CARRIER_3_DESC">
+			<Text>Can carry up to 8 embarked aircraft.[NEWLINE]May not attack, extended visibility.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_DESTROYER">
+			<Text>Destroyer</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_DESTROYER_DESC">
+			<Text>+ 200% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Submarines[ENDCOLOR] units.[NEWLINE]Can intercept 3 [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.[NEWLINE]40% Interception chance.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE">
+			<Text>Submarine</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_SUBMARINE_DESC">
+			<Text>+ 100% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Embarked[ENDCOLOR] units.[NEWLINE]Invisible when not in contact with enemy units.[NEWLINE]Can move under ice.[NEWLINE]Can move after attacking.</Text> <!-- Ignore [COLOR_POSITIVE_TEXT]Enemy ZOC[ENDCOLOR]. -->
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_CRUISER">
+			<Text>Cruiser</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CRUISER_DESC">
+			<Text>+ 25% [ICON_STRENGTH] Combat VS [COLOR_POSITIVE_TEXT]Sea[ENDCOLOR] and [COLOR_POSITIVE_TEXT]Air[ENDCOLOR] units.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_CONVOY">
+			<Text>Convoy</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_CONVOY_DESC">
+			<Text>Limited [COLOR_NEGATIVE_TEXT]visibility[ENDCOLOR].[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Attack[ENDCOLOR].</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_NEVER_SURRENDER">
+			<Text>Never Surrender</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_NEVER_SURRENDER_DESC">
+			<Text>+ 25% [ICON_STRENGTH] Combat in (or over) your territory.</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MARENOSTRUM">
+			<Text>Mare Nostrum</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_MARENOSTRUM_DESC">
+			<Text>+ 10% [ICON_STRENGTH] Combat in the Mediterranean.</Text>
+		</Row>
 		
 	</Language_en_US>	
 

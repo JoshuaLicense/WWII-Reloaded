@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context Font="TwCenMT16" FontStyle="Base" ColorSet="Beige_Black" >
+
+	<Grid ID="ClockOptionsPanel" Hidden="1" ConsumeMouse="1" Anchor="R,T" Offset="100,-10" Size="220,220" Style="Grid9DetailTwo140" >
+		<Stack ID="ClockOptions" Anchor="L,T" Offset="20,45" Padding="0" StackGrowth="Bottom" >
+			<Stack Anchor="R,T" StackGrowth="Right" Padding="3" >
+			        <CheckBox ID="AlarmCheckBox" Anchor="L,C" />
+				<Box Anchor="L,C" Size="34,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Size="32,22" Color="0,0,0,255" >
+						<EditBox ID="AlarmHours" EditMode="1" Size="30,18" Anchor="C,C" NumberInput="1" MaxLength="2" />
+					</Box>
+				</Box>
+				<Label Anchor="L,C" String=":" />
+				<Box Anchor="L,C" Size="34,24" Color="255,255,200,255" >
+					<Box Anchor="C,C" Size="32,22" Color="0,0,0,255" >
+						<EditBox ID="AlarmMinutes" EditMode="1" Size="30,18" Anchor="C,C" NumberInput="1" MaxLength="2" />
+					</Box>
+				</Box>
+			</Stack>
+		</Stack>
+		<TextButton ID="ClockOptionsPanelClose" Anchor="C,B" Offset="0,22" String="TXT_KEY_CLOSE" Font="TwCenMT14" FontStyle="Shadow" MouseOverStyle="SoftShadow" />
+	</Grid>
+	<Instance Name="ClockOptionInstance">
+		<RadioButton ID="ClockOption" Anchor="L,T" TextAnchor="R,C" IsChecked="0" RadioGroup="ClockOptionGroup" />
+	</Instance>
+
+	<Box ID="TopPanelMask" Hidden="1" ConsumeMouse="1" Anchor="C,T" Size="Full.30" Color="0,0,0,200" />
+
+	<Image ID="TopPanelBarL" Hidden="1" ConsumeMouse="1" Anchor="L,T" Texture="TopPanelBar.dds" Size="512.32" >
+		<Image Anchor="R,T" AnchorSide="O,I" Offset="-9,-30" Texture="Dec32x64Right.dds" Size="32.64" ConsumeMouse="true" />
+	</Image>
+
+	<Image ID="TopPanelBarR" Hidden="1" ConsumeMouse="1" Anchor="R,T" Texture="TopPanelBar.dds" Size="512.32" >
+		<Image Anchor="L,T" AnchorSide="O,I" Offset="-9,-30" Texture="Dec32x64Left.dds" Size="32.64" ConsumeMouse="true" />
+	</Image>
+	<Image ID="TopPanelBar" Anchor="C,T" Texture="TopPanelBar.dds" Size="Full.32" ConsumeMouse="true" />
+
+	<Stack ID="TopPanelInfoStack" Anchor="L,T" Padding="0" Offset="4,6" StackGrowth="Right" >
+		<!-- Gold  -->
+		<TextButton ID="GoldPerTurn" Anchor="L,T" String="000 (+000)" ColorLayer0="255,235,0,255" ToolTipType="TooltipTypeTopPanel"/>
+		<Label String = " "/>
+		<!-- Personnel  -->
+		<TextButton ID="PersonnelPerTurn" Anchor="L,T" String="000 (+000)" ColorLayer0="255,235,0,255" ToolTipType="TooltipTypeTopPanel"/>
+		<Label String = " "/>
+		<!-- Materiel  -->
+		<TextButton ID="MaterielPerTurn" Anchor="L,T" String="000 (+000)" ColorLayer0="255,235,0,255" ToolTipType="TooltipTypeTopPanel"/>
+		<Label String = " "/>
+		<!-- Fuel  -->
+		<TextButton ID="FuelPerTurn" Anchor="L,T" String="000 (+000)" ColorLayer0="255,235,0,255" ToolTipType="TooltipTypeTopPanel"/>
+
+		<!-- Warnings  -->
+		<Label String = " "/>
+		<Label ID="WarningString" Anchor="L,T" />
+	</Stack>
+
+	<Stack ID="TopPanelDiploStack" Anchor="R,T" Offset="0,6" Padding="10" StackGrowth="Left" >
+
+		<Button	ID="MenuButton" Anchor="R,T" Offset="0,-6" Texture="MenuButton.dds" Size="28,28" ToolTip="TXT_KEY_MENU_TOOLTIP"/>
+
+		<Button ID="CivilopediaButton" Anchor="R,T" Offset="0,-6" Texture="HelpButton.dds" Size="28,28" ToolTip="TXT_KEY_CIVILOPEDIA_TOOLTIP"/>
+
+		<!-- Time -->
+		<TextButton ID="CurrentTime" Hidden="1" Anchor="R,T" />
+
+		<!-- Date -->
+		<TextButton ID="CurrentDate" Anchor="R,T" />
+
+		<!-- Turn -->
+		<TextButton ID="CurrentTurn" Anchor="R,T" />
+
+		<!-- Resources -->
+		<TextButton ID="ResourceString" Anchor="R,T" ColorLayer0="255,0,255,255" ToolTipType="TooltipTypeTopPanel" />
+
+		<!-- Trade Routes -->
+		<TextButton ID="InternationalTradeRoutes" Anchor="R,T" String="" ColorLayer0="255,235,0,255" ToolTipType="TooltipTypeTopPanel" />
+
+		<!-- Tourism -->
+		<TextButton ID="TourismString" Anchor="R,T" String="" ColorLayer0="255,255,200,255" ToolTipType="TooltipTypeTopPanel" />
+	</Stack>
+
+	<ToolTipType Name="TooltipTypeTopPanel" >
+		<Grid ID="TopPanelMouseover" Anchor="L,T" Offset="30,5" Size="555,12" Padding="8,8" Style="GridBlack8" Color="White,240">
+			<Label ID="TooltipLabel" Anchor="C,C" String="Brief description" WrapWidth="555" />
+		</Grid>
+	</ToolTipType>
+
+	<Instance Name="ResourceInstance">
+		<TextButton ID="ResourceItem" Anchor="R,T" ToolTipType="TooltipTypeTopPanel" />
+	</Instance>
+
+</Context>

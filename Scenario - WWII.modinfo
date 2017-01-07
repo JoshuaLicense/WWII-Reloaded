@@ -25,37 +25,96 @@
   <References />
   <Blocks />
   <Files>
-    <File md5="" import="0">MAPS/WWIIMap.Civ5Map</File>
+    <File md5="" import="0">GameSetup/WorldMap.Civ5Map</File>
 		<File md5="" import="1">GameSetup/Scenario_Background.dds</File>
 		<File md5="" import="0">GameSetup/WWIILoadScreen.lua</File>
     <File md5="" import="0">GameSetup/WWIILoadScreen.xml</File>
 
     <File md5="" import="0">GameSetup/Texts_EN_US.xml</File>
 		
-    <File md5="" import="0">GameSetup/SetupGame.sql</File>	
-    <File md5="" import="0">GameSetup/Leaders.sql</File>
-    <File md5="" import="0">GameSetup/Civilizations.sql</File>
+    <File md5="" import="0">GameSetup/00- SetupGame.sql</File>
+    <File md5="" import="0">GameSetup/00a- PrepareDatabase.xml</File>	
+    <File md5="" import="0">GameSetup/00b- CustomModOptions.xml</File>	
+    <File md5="" import="0">GameSetup/01- Leaders.sql</File>
+    <File md5="" import="0">GameSetup/02- Civilizations.sql</File>
 		
-    <File md5="" import="0">GameSetup/NewFontIcons.xml</File>
-    <File md5="" import="0">GameSetup/NewIconAtlases.xml</File>
+    <File md5="" import="0">GameSetup/03- Create Initialization Table.sql</File>
+    <File md5="" import="0">GameSetup/03a- Units Promotions.xml</File>
+    <File md5="" import="0">GameSetup/04- Define Original Units.sql</File>
+    <File md5="" import="0">GameSetup/05- Define Class Template Units.sql</File>
+    <File md5="" import="0">GameSetup/06- Define Subclass Template Units.sql</File>
+    <File md5="" import="0">GameSetup/07- Define New Units.sql</File>
+		<File md5="" import="0">GameSetup/08- Update New Units Table.sql</File>
 		
-
+    <File md5="" import="0">GameSetup/09- Buildings.sql</File>
+		
+    <File md5="" import="0">GameSetup/10- NewFontIcons.xml</File>
+    <File md5="" import="0">GameSetup/11- NewIconAtlases.xml</File>
+		
+    <File md5="" import="1">GameSetup/Scene/DiploAmerica.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploChina.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploFrance.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploGermany.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploItaly.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploJapan.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploUK.xml</File>
+    <File md5="" import="1">GameSetup/Scene/DiploUSSR.xml</File>
+		
+		<File md5="" import="1">LUA/WWIIMain.lua</File>
+		<File md5="" import="1">LUA/WWIIDefines.lua</File>
+		<File md5="" import="1">LUA/WWIIFunctions.lua</File>
+		<File md5="" import="1">LUA/WWIITraits.lua</File>
+		<File md5="" import="1">LUA/WWIIDiplomacy.lua</File>
+		<File md5="" import="1">LUA/WWIIMilitary.lua</File>
+		<File md5="" import="1">LUA/WWIIHistoricEvents.lua</File>
+		<File md5="" import="1">LUA/WWIIOperations.lua</File>
+		<File md5="" import="1">LUA/WWIIConvoyRoutes.lua</File>
+		
+		<File md5="" import="1">UI/TopPanel.lua</File>
+		<File md5="" import="1">UI/TopPanel.xml</File>	
+		<File md5="" import="1">UI/CityView.lua</File>
+		<File md5="" import="1">UI/CityView.xml</File>
+		<File md5="" import="1">UI/CityView_small.xml</File>	
+		
+		<File md5="" import="1">UI/EUI_tooltip_library.lua</File>
+		<File md5="" import="1">UI/EUI_unit_include.lua</File>
+		
+		<File md5="" import="1">UI/Bombardment.lua</File>	
+		<File md5="" import="1">UI/UnitPanel.lua</File>
+		<File md5="" import="1">UI/EnemyUnitPanel.lua</File>
+		<File md5="" import="1">UI/NotificationPanel.lua</File>	
   </Files>
   <Actions>
     <OnModActivated>
-			<UpdateDatabase>GameSetup/SetupGame.sql</UpdateDatabase>
       <UpdateDatabase>GameSetup/Texts_EN_US.xml</UpdateDatabase>
-			<UpdateDatabase>GameSetup/Leaders.sql</UpdateDatabase>
-			<UpdateDatabase>GameSetup/Civilizations.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/00- SetupGame.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/00a- PrepareDatabase.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/00b- CustomModOptions.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/01- Leaders.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/02- Civilizations.sql</UpdateDatabase>
 			
-      <UpdateDatabase>GameSetup/NewIconAtlases.xml</UpdateDatabase>
-			<UpdateDatabase>GameSetup/NewFontIcons.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/03- Create Initialization Table.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/03a- Units Promotions.xml</UpdateDatabase>
+			<UpdateDatabase>GameSetup/04- Define Original Units.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/05- Define Class Template Units.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/06- Define Subclass Template Units.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/07- Define New Units.sql</UpdateDatabase>
+			<UpdateDatabase>GameSetup/08- Update New Units Table.sql</UpdateDatabase>
+			
+			<UpdateDatabase>GameSetup/09- Buildings.sql</UpdateDatabase>
+			
+			<UpdateDatabase>GameSetup/10- NewFontIcons.xml</UpdateDatabase>
+      <UpdateDatabase>GameSetup/11- NewIconAtlases.xml</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>
 		<EntryPoint type="Custom" file="GameSetup/WWIILoadScreen.xml">
       <Name>WWII</Name>
       <Description></Description>
+    </EntryPoint>	
+		<EntryPoint type="InGameUIAddin" file="LUA/WWIIMain.lua">
+      <Name>Scenario Initialisation</Name>
+      <Description>Scenario Initialisation</Description>
     </EntryPoint>
   </EntryPoints>
 </Mod>

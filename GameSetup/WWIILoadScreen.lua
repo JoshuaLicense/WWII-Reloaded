@@ -7,16 +7,16 @@
 ModId = "dfb37c69-71cb-408d-8f1e-caa96fc1a5d7"
 ModVersion = Modding.GetActivatedModVersion(ModId);
 
-ScenarioFixedMap = "MAPS/WWIIMap.Civ5Map"
+ScenarioFixedMap = "GameSetup/WorldMap.Civ5Map"
+
 ScenarioCivilizations = {
-	[0] = "CIVILIZATION_WWII_UK",
-	[1] = "CIVILIZATION_WWII_FRANCE",
-	[2] = "CIVILIZATION_WWII_GERMANY",
+	[0] = "CIVILIZATION_WWII_JAPAN",
+	[1] = "CIVILIZATION_WWII_GERMANY",
+	[2] = "CIVILIZATION_WWII_USSR",
 	[3] = "CIVILIZATION_WWII_ITALY",
-	[4] = "CIVILIZATION_ENGLAND",
-	[5] = "CIVILIZATION_CHINA",
-	[6] = "CIVILIZATION_JAPAN",
-	[7] = "CIVILIZATION_AMERICA"
+	[4] = "CIVILIZATION_WWII_UK",
+	[5] = "CIVILIZATION_WWII_USA",
+	[6] = "CIVILIZATION_WWII_FRANCE",
 }
 ScenarioDifficulties = { 		"HANDICAP_CHIEFTAIN", "HANDICAP_WARLORD", 	"HANDICAP_PRINCE", 	"HANDICAP_KING", 	"HANDICAP_EMPEROR", "HANDICAP_IMMORTAL", 	"HANDICAP_DEITY", }
 ScenarioDifficultyNames = { "Private", 						"Corporal", 					"Sergeant", 				"Lieutenant", 		"Captain", 					"Colonel", 						"General", }
