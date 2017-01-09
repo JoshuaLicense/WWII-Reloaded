@@ -143,17 +143,31 @@
 		<!-- Processes -->
 		
 		<Row Tag="TXT_KEY_PROCESS_RECRUITING">
-			<Text>Your country needs YOU !</Text>
+			<Text>Propaganda Campaign</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROCESS_RECRUITING_HELP">
-			<Text>Recruits personnel for reinforcement in this city. The number of recruits per turn is relative to this city size and [ICON_FOOD] growth.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Propaganda Campaign[ENDCOLOR] converts 100% of the [ICON_PRODUCTION] Production of this City into [ICON_PERSONNEL] Personnel.</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROCESS_WAR_BONDS">
-			<Text>Buy War Bonds !</Text>
+			<Text>Industrialize</Text>
 		</Row>
 		<Row Tag="TXT_KEY_PROCESS_WAR_BONDS_HELP">
-			<Text>Convert 75% of [ICON_GOLD] gold and [ICON_PRODUCTION] production to materiel for reinforcements.</Text>
+			<Text>[COLOR_POSITIVE_TEXT]Industrialize[ENDCOLOR] converts 100% of the [ICON_PRODUCTION] Production of this City into [ICON_PERSONNEL] Materiels.</Text>
 		</Row>
+		<Replace Tag="TXT_KEY_PROCESS_WEALTH_HELP">
+			<Text>[COLOR_POSITIVE_TEXT]Wealth[ENDCOLOR] converts 100% of the [ICON_PRODUCTION] Production of this City into [ICON_GOLD] Gold.</Text>
+		</Replace>
+		
+		<!-- Project First Finishers-->
+		<Replace Tag="TXT_KEY_MISC_COMPLETES_PROJECT_FIRST">
+			<Text>{1_PlyrName} has completed {@2_PrjctName}!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_SOMEONE_HAS_COMPLETED_FIRST">
+			<Text>{1_PlyrName} has completed {@2_PrjctName}!</Text>
+		</Replace>
+		<Replace Tag="TXT_KEY_MISC_SOMEONE_HAS_COMPLETED_UNKNOWN_FIRST">
+			<Text>{@1_PrjctName} was completed in a far away land!</Text>
+		</Replace>
 		
 		<!-- Civilizations -->
 		

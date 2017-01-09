@@ -33,7 +33,7 @@ g_Initial_OOB = {
 	-- GE
 	{Name = "German central army", 		X = 22, Y = 70, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_III, GE_PANZER_I, ARTILLERY, } },
 	{Name = "German west army", 		X = 17, Y = 69, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY, GE_SS_INFANTRY, GE_PANZER_III, GE_PANZER_I, ARTILLERY} },
-	{Name = "German prussia army", 		X = 26, Y = 73, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY} },
+	{Name = "German prussia army", 		X = 26, Y = 73, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY} },
 	--{Name = "German central AI army", X = 18, Y = 67, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {30,30,45,45,30,15}, },
 	--{Name = "German east AI army",	X = 22, Y = 66, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_II, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {30,30,45,45,30,15}, },
 	
@@ -58,8 +58,8 @@ g_Initial_OOB = {
 	{Name = "American Atlantic Fleet", 	X = 158, Y = 64,Domain = "Sea", 	CivID = AMERICA, 	Group = {US_BATTLESHIP, US_FLETCHER, US_FLETCHER, US_BALTIMORE, US_FLETCHER,} },
 	{Name = "American Panama Fleet", 	X = 151, Y = 41,Domain = "Sea", 	CivID = AMERICA, 	Group = {US_SUBMARINE, US_SUBMARINE} },
 	-- USSR
-	{Name = "USSR central army", 		X = 38, Y = 73, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, } },
-	{Name = "USSR west army", 			X = 32, Y = 69, Domain = "Land", 	CivID = USSR,		Group = {RU_BT2, AT_GUN} },
+	{Name = "USSR central army", 		X = 38, Y = 73, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_INFANTRY, RU_INFANTRY, } },
+	{Name = "USSR west army", 			X = 32, Y = 69, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_BT2, AT_GUN} },
 	{Name = "USSR north army", 			X = 31, Y = 77, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_T28} },
 	--{Name = "USSR AI moscow army", X = 33, Y = 72, Domain = "Land", AI = true, CivID = USSR, Group = {RU_INFANTRY, RU_INFANTRY, RU_BT2, RU_T28} },
 	{Name = "USSR east army", 			X = 64, Y = 75, Domain = "Land", 	CivID = USSR, 		Group = {RU_INFANTRY, RU_T28 } },
@@ -71,19 +71,20 @@ g_Initial_OOB = {
 	{Name = "USSR North fleet",	 		X = 29, Y = 78, Domain = "Sea",		CivID = USSR, 		Group = {RU_GANGUT, RU_SUBMARINE} },
 	{Name = "USSR Central fleet", 		X = 36, Y = 62, Domain = "Sea", 	CivID = USSR, 		Group = {RU_GANGUT, RU_GNEVNY,} },
 	-- JP
-	{Name = "Japanese Manc. army", 		X = 87, Y = 67, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, JP_INFANTRY, JP_INFANTRY, ARTILLERY} },
+	{Name = "Japanese China army", 		X = 84, Y = 60, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, JP_INFANTRY, JP_INFANTRY, JP_INFANTRY, ARTILLERY} },
 	{Name = "Japanese army", 			X = 94, Y = 57, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, ARTILLERY} },
+	{Name = "Japanese Manc. army", 			X = 87, Y = 67, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY} },
 	
-	{Name = "Japanese Korea Air", 		X = 89, Y = 64, Domain = "Air", 	CivID = JAPAN,		Group = {JP_AICHI, } },
-	{Name = "Japanese Air", 			X = 97, Y = 58, Domain = "Air", 	CivID = JAPAN, 		Group = {JP_A6M2, JP_A6M2} },
+	--{Name = "Japanese Korea Air", 		X = 89, Y = 64, Domain = "Air", 	CivID = JAPAN,		Group = {JP_AICHI, } },
+	{Name = "Japanese Air", 			X = 97, Y = 58, Domain = "Air", 	CivID = JAPAN, 		Group = {JP_A6M2, JP_A6M2, JP_AICHI} },
 	--{Name = "Japanese Air AI Bonus", X = 97, Y = 58, Domain = "Air", AI = true,CivID = JAPAN, Group = {JP_A6M2, JP_KI21} },
 	
 	{Name = "Japanese Western fleet", 	X = 88, Y = 60, Domain = "Sea", 	CivID = JAPAN, 		Group = {JP_SUBMARINE, JP_BATTLESHIP_2, JP_KAGERO, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_KAGERO,} },
 	{Name = "Japanese Eastern Fleet", 	X = 100, Y = 57,Domain = "Sea", 	CivID = JAPAN, 		Group = {JP_SUBMARINE, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_KAGERO, JP_CARRIER, JP_CARRIER} },
 	-- CH
-	{Name = "Chinese South army", 		X = 76, Y = 54, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY, CH_INFANTRY} },
+	{Name = "Chinese South army", 		X = 76, Y = 54, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
 	{Name = "Chinese West army", 		X = 66, Y = 65, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
-	{Name = "Chinese South-East army", 		X = 82, Y = 52, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY, CH_INFANTRY} },
+	{Name = "Chinese South-East army", 		X = 82, Y = 52, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
 	{Name = "Chinese North-East army", 		X = 79, Y = 63, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
 
 	-- MINORS

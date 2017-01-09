@@ -610,8 +610,8 @@ CARRIER_3				= GameInfo.Units.UNIT_CARRIER_3.ID
 --------------------------------------------------------------------------------------------
 g_Cities = {
 	-- UK
-	{X = 12, Y = 72, Buildings = { HARBOR, BANK, FACTORY }, }, -- LONDON
-	{X = 9, Y = 70, Buildings = { HARBOR }, }, -- LIVERPOOL
+	{X = 12, Y = 72, Buildings = { HARBOR, BANK, ACADEMY }, }, -- LONDON
+	{X = 9, Y = 74, Buildings = { HARBOR }, }, -- LIVERPOOL
 	{X = 9, Y = 79, Buildings = { HARBOR, OIL_REFINERY }, }, -- EDINBURGH
 	
 	{X = 20, Y = 51, Buildings = { HARBOR, BARRICADE }, }, -- MALTA
@@ -643,7 +643,7 @@ g_Cities = {
 	{X = 57, Y = 43, Buildings = { HARBOR }, }, -- BOMBAY
 	{X = 72, Y = 42, Buildings = { HARBOR }, }, -- RANGOON
 	-- FR
-	{X = 13, Y = 66, Buildings = { OPEN_CITY, BANK }, }, -- PARIS
+	{X = 13, Y = 66, Buildings = { OPEN_CITY, ACADEMY, BANK }, }, -- PARIS
 	{X = 15, Y = 60, Buildings = { HARBOR }, }, -- MARSEILLE
 	{X = 10, Y = 69, Buildings = { HARBOR }, }, -- CHERBOURG
 	{X = 7, Y = 67, Buildings = { HARBOR }, }, -- BREST
@@ -657,7 +657,7 @@ g_Cities = {
 	{X = 79, Y = 38, Buildings = { HARBOR }, }, -- SAIGON	
 	{X = 164, Y = 38, Buildings = { HARBOR }, }, -- CAYENNE	
 	-- IT
-	{X = 20, Y = 58, Buildings = { HARBOR, RADIO }, }, -- ROME
+	{X = 20, Y = 58, Buildings = { HARBOR, ACADEMY, RADIO }, }, -- ROME
 	{X = 22, Y = 56, Buildings = { HARBOR }, }, -- NANTES
 	{X = 31, Y = 54, Buildings = { HARBOR }, }, -- RHODES
 	-- IT EM
@@ -669,15 +669,15 @@ g_Cities = {
 	{X = 19, Y = 73, Buildings = { HARBOR, SHIPYARD }, }, -- KIEL
 	{X = 19, Y = 72, Buildings = { FACTORY, OIL_REFINERY }, }, -- HAMBURG
 	{X = 26, Y = 73, Buildings = { HARBOR }, }, -- KONIGSBERG
-	{X = 17, Y = 69, Buildings = { BARRICADE, SYNTHETIC_FUEL_PLANT, FACTORY, }, }, -- COLOGNE
-	{X = 22, Y = 70, Buildings = { RADIO, BASE, BANK }, }, -- BERLIN
+	{X = 17, Y = 69, Buildings = { BARRICADE, SYNTHETIC_FUEL_PLANT }, }, -- COLOGNE
+	{X = 22, Y = 70, Buildings = { RADIO, ACADEMY, BASE, BANK }, }, -- BERLIN
 	{X = 20, Y = 66, Buildings = { SMALL_AIR_FACTORY, MEDIUM_AIR_FACTORY }, }, -- MUNICH
 	-- USSR
 	{X = 34, Y = 89, Buildings = { HARBOR }, }, -- MURMANSK
 	{X = 31, Y = 78, Buildings = { HARBOR, BARRICADE }, }, -- LENINGRAD
 	{X = 36, Y = 64, Buildings = { HARBOR }, }, -- SEVASTOPOL
 	{X = 94, Y = 69, Buildings = { HARBOR }, }, -- VLADIVOSTOK
-	{X = 38, Y = 73, Buildings = { RADIO, BARRACKS }, }, -- MOSCOW
+	{X = 38, Y = 73, Buildings = { RADIO, ACADEMY }, }, -- MOSCOW
 	{X = 41, Y = 68, Buildings = { BARRACKS }, }, -- STALINGRAD
 	-- CH (Captured Japan)
 	{X = 87, Y = 56, Buildings = { HARBOR }, }, -- SHANGHAI	
@@ -685,15 +685,15 @@ g_Cities = {
 	-- CH
 	{X = 76, Y = 54, Buildings = { RADIO, BARRACKS, BANK }, }, -- CHONGQING	
 	-- JP
-	{X = 97, Y = 58, Buildings = { HARBOR, SHIPYARD, RADIO }, }, -- TOKYO
+	{X = 97, Y = 58, Buildings = { HARBOR, ACADEMY, SHIPYARD, RADIO }, }, -- TOKYO
 	{X = 93, Y = 57, Buildings = { HARBOR, SMALL_AIR_FACTORY, MEDIUM_AIR_FACTORY }, }, -- OSAKA
 	{X = 90, Y = 54, Buildings = { HARBOR }, }, -- NAGASAKI	
-	{X = 89, Y = 61, Buildings = { HARBOR, BARRACKS }, }, -- SEOUL
-	{X = 89, Y = 64, Buildings = { BARRACKS, RADIO }, }, -- PYONGYANG
+	{X = 89, Y = 61, Buildings = { HARBOR }, }, -- SEOUL
+	--{X = 89, Y = 64, Buildings = { RADIO }, }, -- PYONGYANG
 	{X = 87, Y = 67, Buildings = { HARBOR }, }, -- PYONGYANG
 	{X = 97, Y = 68, Buildings = { HARBOR }, }, -- SAPPORO
 	-- US
-	{X = 154, Y = 63, Buildings = { HARBOR, BANK }, }, -- WASHINGTON
+	{X = 154, Y = 63, Buildings = { HARBOR, BARRACKS, BANK }, }, -- WASHINGTON
 	{X = 155, Y = 65, Buildings = { HARBOR, BANK }, }, -- NEW YORK
 	{X = 150, Y = 66, Buildings = { FACTORY }, }, -- DETROIT
 	{X = 131, Y = 60, Buildings = { HARBOR }, }, -- LOS ANGELES

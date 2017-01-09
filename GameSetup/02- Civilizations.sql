@@ -110,15 +110,3 @@ INSERT INTO MinorCivilization_Flavors (MinorCivType, FlavorType, Flavor)
 	SELECT Type, ('FLAVOR_DEFENSE'), 7 FROM MinorCivilizations UNION ALL
 	SELECT Type, ('FLAVOR_OFFENSE'), 7 FROM MinorCivilizations UNION ALL
 	SELECT Type, ('FLAVOR_MILITARY_TRAINING'), 7 FROM MinorCivilizations;
-	
----------------------------------
--- Reset ID
----------------------------------
-CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
-INSERT INTO IDRemapper (Type) SELECT Type FROM MinorCivilizations ORDER by ID;
-UPDATE MinorCivilizations SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE MinorCivilizations.Type = IDRemapper.Type);
-DROP TABLE IDRemapper;
-
-UPDATE sqlite_sequence SET seq = (SELECT COUNT(ID) FROM Civilizations)-1 WHERE name = 'MinorCivilizations';
-
-

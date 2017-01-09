@@ -389,13 +389,3 @@ Update Projects SET Cost = Cost * 1.5 WHERE Cost > 0;
 -----------------------------------------------
 
 --DROP TABLE UnitConfiguration;
-
------------------------------------------------
--- Reset ID 
-----------------------------------------------
-CREATE TABLE IDRemapper ( id INTEGER PRIMARY KEY AUTOINCREMENT, Type TEXT );
-INSERT INTO IDRemapper (Type) SELECT Type FROM Units ORDER by ID;
-UPDATE Units SET ID = ( SELECT IDRemapper.id-1 FROM IDRemapper WHERE Units.Type = IDRemapper.Type);
-DROP TABLE IDRemapper;
-
-UPDATE sqlite_sequence SET seq = (SELECT COUNT(ID) FROM Civilizations)-1 WHERE name = 'Units';

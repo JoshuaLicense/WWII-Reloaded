@@ -5,7 +5,7 @@
     <Stability>Alpha</Stability>
     <Teaser>Scenario - WWII</Teaser>
     <Description>This scenario a total conversion wargame mod based on the Civ5 game engine.[NEWLINE]Features :[NEWLINE][ICON_BULLET]Frontline: units can capture tiles (or liberate your allied/friends tiles)[NEWLINE][ICON_BULLET]Supply lines: units that are not connected to a city won't get reinforcement and a malus in combat[NEWLINE][ICON_BULLET]Reinforcements: personnel and materiel are needed to "heal" your units.[NEWLINE][ICON_BULLET]National units: each great power have it's own set of units models[NEWLINE][NEWLINE][COLOR_RED]The[/COLOR] [COLOR_YELLOW]R.E.D. WWII Data Files (V.5)[/COLOR][COLOR_RED] mod must be activated to play this mod[/COLOR]</Description>
-    <Authors>Josh</Authors>
+    <Authors>Invidious</Authors>
     <HideSetupGame>1</HideSetupGame>
     <AffectsSavedGames>1</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
@@ -21,10 +21,21 @@
   </Properties>
   <Dependencies>
     <Mod id="544d699d-1c84-4606-b22f-a1b009af9471" minversion="0" maxversion="999" title="R.E.D. WWII Data Files" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
   </Dependencies>
   <References />
   <Blocks />
   <Files>
+    <File md5="" import="1">CvGameCore_Expansion2.dll</File>
+		
+    <File md5="E1FAB7179F0A54AE03CBC49A7F935265" import="1">Art/Buildings/CivSymbolsColorLegends128.dds</File>
+    <File md5="5193912B57FD981C49B896F9E5674FDB" import="1">Art/Buildings/CivSymbolsColorLegends214.dds</File>
+    <File md5="BE8A8BF9B35AFFCDCA57F7CF36B426B2" import="1">Art/Buildings/CivSymbolsColorLegends256.dds</File>
+    <File md5="DA1F73D7BA177A0C6126B944FD34C7A5" import="1">Art/Buildings/CivSymbolsColorLegends32.dds</File>
+    <File md5="7FC08789BED64481853655B2915CE94A" import="1">Art/Buildings/CivSymbolsColorLegends45.dds</File>
+    <File md5="357DD196A193D7F4FB237E073C576875" import="1">Art/Buildings/CivSymbolsColorLegends64.dds</File>
+    <File md5="0B47F9DCB923733A7BA0EDA89E9415C1" import="1">Art/Buildings/CivSymbolsColorLegends80.dds</File>
+    
     <File md5="" import="0">GameSetup/WorldMap.Civ5Map</File>
 		<File md5="" import="1">GameSetup/Scenario_Background.dds</File>
 		<File md5="" import="0">GameSetup/WWIILoadScreen.lua</File>
@@ -50,6 +61,8 @@
 		
     <File md5="" import="0">GameSetup/10- NewFontIcons.xml</File>
     <File md5="" import="0">GameSetup/11- NewIconAtlases.xml</File>
+		
+		<File md5="" import="0">GameSetup/99- FinalizeGame.sql</File>
 		
     <File md5="" import="1">GameSetup/Scene/DiploAmerica.xml</File>
     <File md5="" import="1">GameSetup/Scene/DiploChina.xml</File>
@@ -85,6 +98,10 @@
 		<File md5="" import="1">UI/NotificationPanel.lua</File>	
   </Files>
   <Actions>
+    <OnGetDLLPath>
+      <SetDllPath>CvGameCore_Expansion2.dll</SetDllPath>
+    </OnGetDLLPath>
+		
     <OnModActivated>
       <UpdateDatabase>GameSetup/Texts_EN_US.xml</UpdateDatabase>
 			<UpdateDatabase>GameSetup/00- SetupGame.sql</UpdateDatabase>
@@ -105,6 +122,8 @@
 			
 			<UpdateDatabase>GameSetup/10- NewFontIcons.xml</UpdateDatabase>
       <UpdateDatabase>GameSetup/11- NewIconAtlases.xml</UpdateDatabase>
+			
+      <UpdateDatabase>GameSetup/99- FinalizeGame.sql</UpdateDatabase>
     </OnModActivated>
   </Actions>
   <EntryPoints>

@@ -2492,8 +2492,6 @@ local function GetMoodInfo( playerID )
 	end -- playerID vs activePlayerID
 
 --TODO "TXT_KEY_DO_WE_PROVIDE" & "TXT_KEY_DO_THEY_PROVIDE"
-	tips:insertIf( #deals > 0 and L"TXT_KEY_DO_CURRENT_DEALS" .. "[NEWLINE]" .. deals:concat( ", " ) )
-	tips:insertIf( #tradeRoutes > 0 and tradeRoutes:concat( "[NEWLINE]" ) )
 	tips:insertIf( #treaties > 0 and treaties:concat( ", " ) .. "[ENDCOLOR]" )
 	tips:insertIf( #opinions > 0 and "[ICON_BULLET]" .. table_concat( opinions, "[NEWLINE][ICON_BULLET]" ) .. "[ENDCOLOR]" )
 

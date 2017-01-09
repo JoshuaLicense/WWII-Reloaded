@@ -297,7 +297,7 @@ g_Convoy = {
 		Name = "Hong Kong to UK",
 		SpawnList = { {X=83, Y=47} },
 		Frequency = 15, -- probability (in percent) of convoy spawning at each turn
-		DestinationList = { {X=9, Y=75}, {X=9, Y=79} }, -- Liverpool, Edinburgh
+		DestinationList = { {X=9, Y=74}, {X=9, Y=79} }, -- Liverpool, Edinburgh
 		CivID = ENGLAND, -- Route owner
 		MaxConvoysOnRoute = 1, -- how many convoy can use that route at the same time
 		Condition = IsHongKongAlly, -- Must refer to a function, remove this line to use the default condition (true)
