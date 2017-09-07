@@ -5,8 +5,10 @@ UPDATE Defines SET Value = -1 WHERE Name IN('AI_HOMELAND_MOVE_PRIORITY_PATROL', 
 UPDATE Defines SET Value = 1 	WHERE Name = 'AI_HOMELAND_MAX_DEFENSIVE_MOVE_TURNS';
 UPDATE Defines SET Value = 10 WHERE Name = 'COMBAT_DAMAGE';
 
---UPDATE Defines SET Value = 5 WHERE Name = 'AI_STRATEGY_DEFEND_MY_LANDS_BASE_UNITS';
---UPDATE Defines SET Value = 1 WHERE Name = 'AI_STRATEGY_DEFEND_MY_LANDS_UNITS_PER_CITY';
+UPDATE Defines SET Value = 0 WHERE Name = 'AI_STRATEGY_DEFEND_MY_LANDS_BASE_UNITS';
+UPDATE Defines SET Value = 0 WHERE Name = 'AI_STRATEGY_DEFEND_MY_LANDS_UNITS_PER_CITY';
+UPDATE TacticalMoves SET Priority = 21 WHERE Type = 'TACTICAL_REPOSITION';
+UPDATE TacticalMoves SET Priority = 76 WHERE Type = 'TACTICAL_DAMAGE_CITY';
 
 /*
 UPDATE Defines SET Value = 2 WHERE Name = 'AI_OPERATIONAL_MAX_RECRUIT_TURNS_DEFAULT';
@@ -84,6 +86,8 @@ UPDATE Improvements SET DefenseModifier = 40	WHERE Type = 'IMPROVEMENT_BUNKER';
 UPDATE Improvements SET DefenseModifier = 75	WHERE Type = 'IMPROVEMENT_FORT';
 UPDATE Improvements SET DefenseModifier = 100	WHERE Type = 'IMPROVEMENT_CITADEL';
 
+UPDATE Defines SET Value = 10 WHERE Name = 'HILLS_EXTRA_DEFENSE';
+
 UPDATE Improvements SET NearbyEnemyDamage = 0	WHERE Type = 'IMPROVEMENT_CITADEL';
 
 UPDATE ArtDefine_Landmarks SET Scale = 0.65*Scale 
@@ -120,6 +124,8 @@ UPDATE Defines SET Value = 3 WHERE Name = 'EMBARKED_UNIT_MOVEMENT';
 
 UPDATE Defines SET Value = 30 WHERE Name = 'EXPERIENCE_PER_LEVEL';
 
+UPDATE Defines SET Value = 0 WHERE Name = 'UNIT_MAINTENANCE_GAME_MULTIPLIER';
+
 --------------------------------------------------------------------------------------------
 -- Minor Civilizations
 --------------------------------------------------------------------------------------------
@@ -128,6 +134,9 @@ UPDATE Defines SET Value = 1000	WHERE Name LIKE 'FRIENDSHIP_THRESHOLD_CAN_BULLY'
 UPDATE Defines SET Value = 1000	WHERE Name LIKE 'FRIENDSHIP_THRESHOLD_CAN_PLEDGE_TO_PROTECT';
 UPDATE Defines SET Value = 0	WHERE Name LIKE 'FRIENDSHIP_PER_UNIT_GIFTED';
 UPDATE Defines SET Value = 1	WHERE Name LIKE 'MINOR_UNIT_GIFT_TRAVEL_TURNS';
+
+UPDATE Defines SET Value = 1000	WHERE Name LIKE 'MINOR_CIV_AGGRESSOR_THRESHOLD';
+UPDATE Defines SET Value = 1000	WHERE Name LIKE 'MINOR_CIV_WARMONGER_THRESHOLD';
 
 --------------------------------------------------------------------------------------------
 -- Technologies
@@ -316,3 +325,10 @@ UPDATE HandicapInfos SET ProductionFreeUnits = 10, ProductionFreeUnitsPerCity = 
 
 UPDATE HandicapInfos SET ProductionFreeUnits = 0, ProductionFreeUnitsPerCity = 1, ProductionFreeUnitsPopulationPercent = 25, RouteCostPercent = 100, UnitCostPercent = 100, BuildingCostPercent = 100 WHERE Type = 'HANDICAP_AI_DEFAULT';
 UPDATE HandicapInfos SET AIUnitSupplyPercent = 0;
+
+--------------------------------------------------------------------------------------------
+-- Victories
+--------------------------------------------------------------------------------------------
+INSERT INTO Victories (Type, Description, VictoryStatement, VictoryBackground, Civilopedia, WinsGame, Conquest, Audio) VALUES
+	('VICTORY_ALLIED_EUROPE', 'TXT_KEY_VICTORY_DOMINATION', 'TXT_KEY_VICTORY_DOMINATION_BANG', 'victory_allies.dds', 'TXT_KEY_VICTORY_DOMINATION_PEDIA', 1, 1, 'AS2D_VICTORY_SPEECH_CONQUEST_VICTORY'),
+	('VICTORY_AXIS_EUROPE', 'TXT_KEY_VICTORY_DOMINATION', 'TXT_KEY_VICTORY_DOMINATION_BANG', 'victory_axis.dds', 'TXT_KEY_VICTORY_DOMINATION_PEDIA', 1, 1, 'AS2D_VICTORY_SPEECH_CONQUEST_VICTORY');

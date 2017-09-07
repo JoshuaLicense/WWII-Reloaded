@@ -76,6 +76,9 @@
 
 		<!-- Tourism -->
 		<TextButton ID="TourismString" Anchor="R,T" String="" ColorLayer0="255,255,200,255" ToolTipType="TooltipTypeTopPanel" />
+		
+		<!-- Victory Progresss -->
+		<TextButton ID="Score" Anchor="R,T" String="" Hidden="1" ColorLayer0="255,255,200,255" ToolTipType="TooltipTypeTopPanel" />
 	</Stack>
 
 	<ToolTipType Name="TooltipTypeTopPanel" >

@@ -358,7 +358,7 @@ UPDATE Units SET MaxHitPoints = 200 WHERE Class = 'UNITCLASS_INFANTRY' OR Class 
 UPDATE Units SET MaxHitPoints = 150 WHERE Class = 'UNITCLASS_INFANTRY_2';
 
 UPDATE Units SET MaxHitPoints = 75 WHERE Domain = 'DOMAIN_LAND' AND (Class LIKE '%TANK_DESTROYER%' OR Class LIKE '%ASSAULT_GUN%' OR Class LIKE '%ARTILLERY%' OR Class LIKE '%AA_GUN%' OR Class LIKE '%ANTI_AIRCRAFT_GUN%' OR Class LIKE '%FIELD_GUN%');
-UPDATE Units SET MaxHitPoints = 50 WHERE Domain = 'DOMAIN_LAND' AND (Class LIKE '%FORTIFIED_GUN%');
+UPDATE Units SET MaxHitPoints = 75 WHERE Domain = 'DOMAIN_LAND' AND (Class LIKE '%FORTIFIED_GUN%');
 UPDATE Units SET MaxHitPoints = 100 WHERE Domain = 'DOMAIN_LAND' AND (Class LIKE '%HEAVY%');
 UPDATE Units SET MaxHitPoints = 10 WHERE Domain = 'DOMAIN_LAND' AND (Class LIKE '%SPECIAL_FORCES%');
 
@@ -381,8 +381,14 @@ UPDATE Units SET RangedCombatLimit = 200 WHERE Range > 0;
 UPDATE Units SET Range = ((Range+1) / 2) WHERE Range > 1;
 
 -- 
-UPDATE Units SET Cost = Cost * 1.5 WHERE Cost > 0;
-Update Projects SET Cost = Cost * 1.5 WHERE Cost > 0;
+UPDATE Units SET Cost = Cost * 1.2 WHERE Cost > 0;
+Update Projects SET Cost = Cost * 1 WHERE Cost > 0;
+--
+
+UPDATE UnitClasses SET MaxPlayerInstances = 5 WHERE Type = 'UNITCLASS_PARATROOPER';
+UPDATE UnitClasses SET MaxPlayerInstances = 3 WHERE Type = 'UNITCLASS_SPECIAL_FORCES';
+UPDATE UnitClasses SET MaxPlayerInstances = 1 WHERE Type = 'UNITCLASS_CARRIER';
+UPDATE UnitClasses SET MaxPlayerInstances = 2 WHERE Type = 'UNITCLASS_BATTLESHIP_2';
 
 -----------------------------------------------
 -- Delete UnitConfiguration table

@@ -170,38 +170,38 @@ if iValue == nil then
 		if (player:IsEverAlive()) then
 			local civType = player:GetCivilizationType();
 			if(civType == ENGLAND) then
-				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 3000)
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
-				player:ChangeYield(YieldTypes.YIELD_FUEL, 4000)
+				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 5000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 5000)
+				player:ChangeYield(YieldTypes.YIELD_FUEL, 6000)
 				player:SetGreatGeneralCombatBonus(15)
 			elseif(civType == GERMANY) then
-				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 10000)
+				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 15000)
 				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 4000)
-				player:ChangeYield(YieldTypes.YIELD_FUEL, 5000)
+				player:ChangeYield(YieldTypes.YIELD_FUEL, 7000)
 				player:SetGreatGeneralCombatBonus(20)
 			elseif(civType == FRANCE) then
-				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 3000)
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
-				player:ChangeYield(YieldTypes.YIELD_FUEL, 4000)
+				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 5000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 4000)
+				player:ChangeYield(YieldTypes.YIELD_FUEL, 6000)
 				player:SetGreatGeneralCombatBonus(10)
 			elseif(civType == ITALY) then
-				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 1000)
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
-				player:ChangeYield(YieldTypes.YIELD_FUEL, 4000)
+				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 3000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 2000)
+				player:ChangeYield(YieldTypes.YIELD_FUEL, 7000)
 				player:SetGreatGeneralCombatBonus(5)
 			elseif(civType == AMERICA) then
 				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 3000)
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 2000)
 				player:ChangeYield(YieldTypes.YIELD_FUEL, 2500)
 				player:SetGreatGeneralCombatBonus(15)
 			elseif(civType == JAPAN) then
-				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 2000)
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
+				player:ChangeYield(YieldTypes.YIELD_PERSONNEL, 7000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 4000)
 				player:ChangeYield(YieldTypes.YIELD_FUEL, 8000)
 				player:SetGreatGeneralCombatBonus(10)
 			elseif(civType == USSR) then
-				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 1000)
-				player:ChangeYield(YieldTypes.YIELD_FUEL, 3000)
+				player:ChangeYield(YieldTypes.YIELD_MATERIEL, 5000)
+				player:ChangeYield(YieldTypes.YIELD_FUEL, 6000)
 				player:SetGreatGeneralCombatBonus(5)
 			end
 		end

@@ -2285,11 +2285,11 @@ local function GetMoodInfo( playerID )
 	-- Gold (can be seen in diplo relation ship)
 	tips:insert( S( "%i%s(%+i)", player:GetGold(), g_currencyIcon, player:CalculateGoldRate() ) 
 		.. ", "
-		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_PERSONNEL), "[ICON_PERSONNEL]", player:GetYieldPerTurn(YieldTypes.YIELD_PERSONNEL) - player:GetRequiredYield(YieldTypes.YIELD_PERSONNEL, true) )
+		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_PERSONNEL), "[ICON_PERSONNEL]", player:GetYieldPerTurn(YieldTypes.YIELD_PERSONNEL) - player:GetRequiredYield(YieldTypes.YIELD_PERSONNEL, true, true) )
 		.. ", "
-		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_MATERIEL), "[ICON_MATERIEL]", player:GetYieldPerTurn(YieldTypes.YIELD_MATERIEL) - player:GetRequiredYield(YieldTypes.YIELD_MATERIEL, true) )
+		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_MATERIEL), "[ICON_MATERIEL]", player:GetYieldPerTurn(YieldTypes.YIELD_MATERIEL) - player:GetRequiredYield(YieldTypes.YIELD_MATERIEL, true, true) )
 		.. ", "
-		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_FUEL), "[ICON_FUEL]", player:GetYieldPerTurn(YieldTypes.YIELD_FUEL) - player:GetRequiredYield(YieldTypes.YIELD_FUEL) ) )
+		.. S( "%i%s(%+i)", player:GetYield(YieldTypes.YIELD_FUEL), "[ICON_FUEL]", player:GetYieldPerTurn(YieldTypes.YIELD_FUEL) - player:GetRequiredYield(YieldTypes.YIELD_FUEL, false, true) ) )
 
 	--------------------------------------------------------------------
 	-- Loop through the active player's current deals

@@ -10,6 +10,7 @@
 		<Replace Name="BALANCE_CORE_MILITARY_PROMOTION_ADVANCED" Value="1"/>
 		<Replace Name="UNITS_MAX_HP" Value="1"/>
 		<Replace Name="GLOBAL_STACKING_RULES" Value="1"/>
+		<Replace Name="EVENTS_BATTLES" Value="1"/>
 		<Replace Name="CORE_DEBUGGING" Value="1"/>	
 	</CustomModOptions>
 </GameData>

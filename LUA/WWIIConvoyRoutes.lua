@@ -287,7 +287,7 @@ g_Convoy = {
 		Name = "New York to UK",
 		SpawnList = { {X=156, Y=65} },
 		Frequency = 20, -- probability (in percent) of convoy spawning at each turn
-		DestinationList = { {X=9, Y=75}, {X=9, Y=79} }, -- Liverpool, Edinburgh
+		DestinationList = { {X=9, Y=74}, {X=9, Y=79} }, -- Liverpool, Edinburgh
 		CivID = ENGLAND, -- Route owner
 		MaxConvoysOnRoute = 4, -- how many convoy can use that route at the same time
 		Condition = CheckUSEastConvoys, -- Must refer to a function, remove this line to use the default condition (true)
@@ -500,10 +500,11 @@ function FinalizeConvoy(iUnit, iPlayer, iX, iY)
 	end
 	
 	SaveConvoyDB("DELETE FROM Convoys WHERE Unit = ? AND Player = ?", iUnit, iPlayer)
+	return true
 end
 GameEvents.FinalizeConvoy.Add(FinalizeConvoy)
 
-function UpdateConvoyDestination(iUnit, iPlayer)
+function UpdateConvoy(iUnit, iPlayer)
 	local player = Players [ iPlayer ]
 	local unit = player:GetUnitByID(iUnit)
 	
@@ -511,7 +512,7 @@ function UpdateConvoyDestination(iUnit, iPlayer)
 
 	local objPlot = false
 	
-	for i, destination in ipairs(g_Convoy[loadDate.RouteID].DestinationList) do
+	for i, destination in ipairs(g_Convoy[loadData.RouteID].DestinationList) do
 		local destPlot = Map.GetPlot(destination.X, destination.Y)
 		if destPlot and not objPlot then
 			objPlot = CheckConvoyDestination(playerID, destPlot)
@@ -530,13 +531,15 @@ function UpdateConvoyDestination(iUnit, iPlayer)
 		print("Convoy has been redirected!")
 		unit:SetConvoyPlot(objPlot)
 		player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "A Convoy has been redirected to " .. strDestination, "Convoy redirected !", objPlot:GetX(), objPlot:GetY())
+		return true
 	else
 		print("Removing convoy as no valid destination!")
 		player:AddNotification(NotificationTypes.NOTIFICATION_GENERIC, "A Convoy got destroyed as it has no valid destinations", "Convoy was destroyed", -1, -1)
 		SaveConvoyDB("DELETE FROM Convoys WHERE Unit = ? AND Player = ?", iUnit, iPlayer)
 	end
+	return false
 end
-GameEvents.UpdateConvoyDestination.Add(UpdateConvoyDestination)
+GameEvents.UpdateConvoy.Add(UpdateConvoy)
 
 function OnConvoyKilled(iPlayer, iUnit) 
 

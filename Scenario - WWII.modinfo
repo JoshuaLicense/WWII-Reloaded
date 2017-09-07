@@ -21,7 +21,7 @@
   </Properties>
   <Dependencies>
     <Mod id="544d699d-1c84-4606-b22f-a1b009af9471" minversion="0" maxversion="999" title="R.E.D. WWII Data Files" />
-    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="(1) Community Patch" />
+    <Mod id="d1b6328c-ff44-4b0d-aad7-c657f83610cd" minversion="0" maxversion="999" title="Community Patch" />
   </Dependencies>
   <References />
   <Blocks />
@@ -61,6 +61,7 @@
 		
     <File md5="" import="0">GameSetup/10- NewFontIcons.xml</File>
     <File md5="" import="0">GameSetup/11- NewIconAtlases.xml</File>
+    <File md5="" import="0">GameSetup/12- NewImprovements.sql</File>
 		
 		<File md5="" import="0">GameSetup/99- FinalizeGame.sql</File>
 		
@@ -96,12 +97,13 @@
 		<File md5="" import="1">UI/UnitPanel.lua</File>
 		<File md5="" import="1">UI/EnemyUnitPanel.lua</File>
 		<File md5="" import="1">UI/NotificationPanel.lua</File>	
+		<File md5="" import="1">UI/PopulateUniques.lua</File>
+		<File md5="" import="1">UI/TradeLogic.lua</File>	
   </Files>
   <Actions>
     <OnGetDLLPath>
       <SetDllPath>CvGameCore_Expansion2.dll</SetDllPath>
     </OnGetDLLPath>
-		
     <OnModActivated>
       <UpdateDatabase>GameSetup/Texts_EN_US.xml</UpdateDatabase>
 			<UpdateDatabase>GameSetup/00- SetupGame.sql</UpdateDatabase>
@@ -122,6 +124,7 @@
 			
 			<UpdateDatabase>GameSetup/10- NewFontIcons.xml</UpdateDatabase>
       <UpdateDatabase>GameSetup/11- NewIconAtlases.xml</UpdateDatabase>
+      <UpdateDatabase>GameSetup/12- NewImprovements.sql</UpdateDatabase>
 			
       <UpdateDatabase>GameSetup/99- FinalizeGame.sql</UpdateDatabase>
     </OnModActivated>
@@ -130,7 +133,7 @@
 		<EntryPoint type="Custom" file="GameSetup/WWIILoadScreen.xml">
       <Name>WWII</Name>
       <Description></Description>
-    </EntryPoint>	
+    </EntryPoint>
 		<EntryPoint type="InGameUIAddin" file="LUA/WWIIMain.lua">
       <Name>Scenario Initialisation</Name>
       <Description>Scenario Initialisation</Description>

@@ -2,7 +2,7 @@ print("------------------ Loaded WWIIMilitary.lua ------------------")
 
 g_Initial_OOB = {
 	-- FR
-	{Name = "French army", 				X = 13, Y = 66, Domain = "Land", 	CivID = FRANCE,		Group = {FR_INFANTRY, FR_AMR35, FR_B1, FR_S35, ARTILLERY} },
+	{Name = "French army", 				X = 13, Y = 66, Domain = "Land", 	CivID = FRANCE,		Group = {FR_AMR35, FR_B1, FR_S35, ARTILLERY} },
 	--{Name = "French AI army",			X = 12, Y = 63, Domain = "Land", AI = true, CivID = FRANCE, Group = {FR_INFANTRY, FR_INFANTRY, FR_CHAR_D1, AT_GUN} },
 	
 	{Name = "French metr. aviation",	X = 13, Y = 66, Domain = "Air", 	CivID = FRANCE, 	Group = {FR_HAWK75, FR_MS406} },
@@ -11,11 +11,11 @@ g_Initial_OOB = {
 	{Name = "French Mediteranean fleet",X = 15, Y = 58, Domain = "Sea", 	CivID = FRANCE,		Group = {FR_FANTASQUE, FR_FANTASQUE, FR_FANTASQUE, FR_SUBMARINE, FR_SUBMARINE, FR_BATTLESHIP_2, FR_BATTLESHIP} },
 	{Name = "French Oceanic fleet",		X = 7, Y = 63, 	Domain = "Sea", 	CivID = FRANCE, 	Group = {FR_FANTASQUE,  FR_GALISSONIERE, FR_SUBMARINE} },
 	-- EN
-	{Name = "England army", 			X = 12, Y = 74, Domain = "Land", 	CivID = ENGLAND,	Group = {UK_INFANTRY, UK_TETRARCH, ARTILLERY}, UnitsXP = {30, 30, 15} },
+	{Name = "England army", 			X = 12, Y = 74, Domain = "Land", 	CivID = ENGLAND,	Group = {UK_INFANTRY, ARTILLERY}, UnitsXP = {30, 30, 15} },
 	{Name = "England Exped. corp Egypt",X = 30, Y = 46, Domain = "Land", 	CivID = ENGLAND, 	Group = {UK_INFANTRY, UK_CRUISER_I, UK_VICKERS_MK6B} },	
 	
 	{Name = "Commonwealth Africa",		X = 28, Y = 14, Domain = "Land", 	IsMinor = true, 	CivID = BRITISH_COMMONWEALTH, Group = {UK_INFANTRY} },	
-	{Name = "Commonwealth India",		X = 60, Y = 51, Domain = "Land", 	IsMinor = true, 	CivID = BRITISH_COMMONWEALTH, Group = {UK_INFANTRY, UK_INFANTRY} },	
+	{Name = "Commonwealth India",		X = 60, Y = 51, Domain = "Land", 	IsMinor = true, 	CivID = BRITISH_COMMONWEALTH, Group = {UK_INFANTRY} },	
 	{Name = "Commonwealth Australia",	X = 104, Y = 13,Domain = "Land", 	IsMinor = true, 	CivID = BRITISH_COMMONWEALTH, Group = {UK_INFANTRY} },	
 	{Name = "Commonwealth North Africa",X = 35, Y = 49, Domain = "Land", 	IsMinor = true, 	CivID = BRITISH_COMMONWEALTH, Group = {UK_INFANTRY} },	
 	
@@ -32,7 +32,7 @@ g_Initial_OOB = {
 	
 	-- GE
 	{Name = "German central army", 		X = 22, Y = 70, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY, GE_PANZER_III, GE_PANZER_I, ARTILLERY, } },
-	{Name = "German west army", 		X = 17, Y = 69, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY, GE_SS_INFANTRY, GE_PANZER_III, GE_PANZER_I, ARTILLERY} },
+	{Name = "German west army", 		X = 18, Y = 69, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY, GE_SS_INFANTRY, GE_PANZER_III, GE_PANZER_I, ARTILLERY} },
 	{Name = "German prussia army", 		X = 26, Y = 73, Domain = "Land", 	CivID = GERMANY, 	Group = {GE_INFANTRY, GE_INFANTRY} },
 	--{Name = "German central AI army", X = 18, Y = 67, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_I, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {30,30,45,45,30,15}, },
 	--{Name = "German east AI army",	X = 22, Y = 66, Domain = "Land", AI = true, CivID = GERMANY, Group = {GE_INFANTRY, GE_PANZER_II, GE_PANZER_III, GE_PANZER_IV, AT_GUN}, UnitsXP = {30,30,45,45,30,15}, },
@@ -45,7 +45,7 @@ g_Initial_OOB = {
 
 	-- IT
 	{Name = "Italian army", 			X = 20, Y = 59, Domain = "Land", 	CivID = ITALY, 		Group = {IT_INFANTRY, IT_INFANTRY, IT_M11_39} },
-	{Name = "Italian colonial army",	X = 26, Y = 44, Domain = "Land", 	CivID = ITALY, 		Group = {IT_INFANTRY, IT_INFANTRY, IT_M11_39, IT_M11_39, ARTILLERY} },
+	{Name = "Italian colonial army",	X = 26, Y = 44, Domain = "Land", 	IsMinor = true, CivID = ITALIAN_EMPIRE, 		Group = {IT_INFANTRY, IT_INFANTRY, IT_M11_39, IT_M11_39, ARTILLERY} },
 	
 	{Name = "Italian colonial army",	X = 32, Y = 33, Domain = "Land",  	IsMinor = true,		CivID = ITALIAN_EMPIRE, Group = {IT_INFANTRY, IT_INFANTRY} },
 	{Name = "Italian air", 				X = 20, Y = 58, Domain = "Air", 	CivID = ITALY, 		Group = {IT_CR42, IT_CR42, IT_CR42} },
@@ -58,7 +58,7 @@ g_Initial_OOB = {
 	{Name = "American Atlantic Fleet", 	X = 158, Y = 64,Domain = "Sea", 	CivID = AMERICA, 	Group = {US_BATTLESHIP, US_FLETCHER, US_FLETCHER, US_BALTIMORE, US_FLETCHER,} },
 	{Name = "American Panama Fleet", 	X = 151, Y = 41,Domain = "Sea", 	CivID = AMERICA, 	Group = {US_SUBMARINE, US_SUBMARINE} },
 	-- USSR
-	{Name = "USSR central army", 		X = 38, Y = 73, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_INFANTRY, RU_INFANTRY, } },
+	{Name = "USSR central army", 		X = 38, Y = 73, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_INFANTRY } },
 	{Name = "USSR west army", 			X = 32, Y = 69, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_BT2, AT_GUN} },
 	{Name = "USSR north army", 			X = 31, Y = 77, Domain = "Land", 	CivID = USSR,		Group = {RU_INFANTRY, RU_T28} },
 	--{Name = "USSR AI moscow army", X = 33, Y = 72, Domain = "Land", AI = true, CivID = USSR, Group = {RU_INFANTRY, RU_INFANTRY, RU_BT2, RU_T28} },
@@ -71,9 +71,9 @@ g_Initial_OOB = {
 	{Name = "USSR North fleet",	 		X = 29, Y = 78, Domain = "Sea",		CivID = USSR, 		Group = {RU_GANGUT, RU_SUBMARINE} },
 	{Name = "USSR Central fleet", 		X = 36, Y = 62, Domain = "Sea", 	CivID = USSR, 		Group = {RU_GANGUT, RU_GNEVNY,} },
 	-- JP
-	{Name = "Japanese China army", 		X = 84, Y = 60, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, JP_INFANTRY, JP_INFANTRY, JP_INFANTRY, ARTILLERY} },
-	{Name = "Japanese army", 			X = 94, Y = 57, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, ARTILLERY} },
-	{Name = "Japanese Manc. army", 			X = 87, Y = 67, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY} },
+	{Name = "Japanese China army", 		X = 84, Y = 60, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY, JP_INFANTRY, ARTILLERY} },
+	{Name = "Japanese army", 			X = 94, Y = 57, Domain = "Land", 	CivID = JAPAN, 		Group = {JP_INFANTRY} },
+	{Name = "Japanese Manc. army", 			X = 87, Y = 67, Domain = "Land", 	CivID = JAPAN, Group = {JP_INFANTRY} },
 	
 	--{Name = "Japanese Korea Air", 		X = 89, Y = 64, Domain = "Air", 	CivID = JAPAN,		Group = {JP_AICHI, } },
 	{Name = "Japanese Air", 			X = 97, Y = 58, Domain = "Air", 	CivID = JAPAN, 		Group = {JP_A6M2, JP_A6M2, JP_AICHI} },
@@ -82,17 +82,15 @@ g_Initial_OOB = {
 	{Name = "Japanese Western fleet", 	X = 88, Y = 60, Domain = "Sea", 	CivID = JAPAN, 		Group = {JP_SUBMARINE, JP_BATTLESHIP_2, JP_KAGERO, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_KAGERO,} },
 	{Name = "Japanese Eastern Fleet", 	X = 100, Y = 57,Domain = "Sea", 	CivID = JAPAN, 		Group = {JP_SUBMARINE, JP_TAKAO, JP_BATTLESHIP, JP_KAGERO, JP_KAGERO, JP_CARRIER, JP_CARRIER} },
 	-- CH
-	{Name = "Chinese South army", 		X = 76, Y = 54, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
-	{Name = "Chinese West army", 		X = 66, Y = 65, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
-	{Name = "Chinese South-East army", 		X = 82, Y = 52, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
-	{Name = "Chinese North-East army", 		X = 79, Y = 63, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY} },
+	{Name = "Chinese South army", 		X = 76, Y = 54, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY, CH_INFANTRY, } },
+	{Name = "Chinese West army", 		X = 66, Y = 65, Domain = "Land", 	IsMinor = true, CivID = CHINA, 		Group = {CH_INFANTRY, CH_INFANTRY, } },
 
 	-- MINORS
 	{Name = "Greek army", 				X = 27, Y = 56, Domain = "Land", 	CivID = GREECE, 	IsMinor = true, Group = {GR_INFANTRY, GR_VICKERS_MKE} },
 	{Name = "Greek air force", 			X = 28, Y = 56, Domain = "Air", 	CivID = GREECE, 	IsMinor = true, Group = {GR_P24, GR_P24} },
 	{Name = "Greek navy", 				X = 30, Y = 56, Domain = "Sea", 	CivID = GREECE, 	IsMinor = true, Group = {GR_PISA, GR_GEORGIOS} },
 	
-	{Name = "Polish army",			X = 27, Y = 70,		Domain = "Land",	CivID = POLAND,		IsMinor = true, Group = {PL_INFANTRY, AT_GUN, PL_10TP } },
+	{Name = "Polish army",			X = 27, Y = 70,		Domain = "Land",	CivID = POLAND,		IsMinor = true, Group = {PL_INFANTRY, AT_GUN } },
 	{Name = "Polish army east",		X = 29, Y = 69,		Domain = "Land",	CivID = POLAND,		IsMinor = true, Group = {PL_VICKERS_MKE_A} },
 	{Name = "Polish air force",		X = 27, Y = 70,		Domain = "Air",		CivID = POLAND,		IsMinor = true, Group = {PL_PZL37, PL_P11, } },
 	{Name = "Polish fleet",			X = 26, Y = 79,		Domain = "Sea",		CivID = POLAND,		IsMinor = true, Group = {PL_SUBMARINE} },
@@ -125,14 +123,30 @@ g_Initial_OOB = {
 	{Name = "US Generals", 				X = 154,Y = 63,Domain = "City", 	CivID = AMERICA, 	Group = { GREAT_GENERAL, GREAT_GENERAL }, UnitsName = { "George S. Patton", "Dwight D. Eisenhower" } },
 	{Name = "USSR Generals", 			X = 38, Y = 73, Domain = "City", 	CivID = USSR, 		Group = { GREAT_GENERAL }, UnitsName = { "Georgy Zhukov" } },
 	{Name = "Japanese Generals",		X = 87, Y = 67, Domain = "City", 	CivID = JAPAN, 		Group = { GREAT_GENERAL }, UnitsName = { "Tomoyuki Yamashita" } },
-	--{Name = "Chinese Generals",			X = 77, Y = 53, Domain = "City", 	CivID = CHINA, 		Group = { GREAT_GENERAL }, UnitsName = { "Mao Zedong" } },]]
+	
+	-- Fortifications
+	{Name = "Maginot Line", X = 15, Y = 68, Domain = "Land", CivID = FRANCE, Group = {FORTIFIED_GUN}, UnitsName = {"Ouvrage de Fermont"} },
+	{Name = "Maginot Line", X = 16, Y = 66, Domain = "Land", CivID = FRANCE, Group = {FORTIFIED_GUN}, UnitsName = {"SF de Colmar"} },
+	
+	{Name = "Westwall 1", X = 17, Y = 66, Domain = "Land", CivID = GERMANY, Group = {FORTIFIED_GUN} }, 
+	{Name = "Westwall 2", X = 16, Y = 68, Domain = "Land", CivID = GERMANY, Group = {FORTIFIED_GUN} }, 
+	
+	{Name = "Westwall 3", X = 17, Y = 70, Domain = "Land", CivID = GERMANY, Group = {FORTIFIED_GUN} }, 
+	{Name = "Westwall 4", X = 17, Y = 72, Domain = "Land", CivID = GERMANY, Group = {FORTIFIED_GUN} }, 
 }
+
+function SetBunkerAt(x,y)
+	local plot = Map.GetPlot(x ,y)
+	local iType = GameInfoTypes["IMPROVEMENT_BUNKER"]
+	if (plot:GetImprovementType() ~= iType) then
+		plot:SetImprovementType(iType)
+	end
+end
 
 -- Initial Order of Battle
 function InitializeMilitary()
 	if g_Initial_OOB then
-		for i, oob in ipairs (g_Initial_OOB) do
-			local playerID = GetPlayerIDFromCivID (oob.CivID, oob.IsMinor)	
+		for i, oob in ipairs (g_Initial_OOB) do			local playerID = GetPlayerIDFromCivID (oob.CivID, oob.IsMinor)	
 			local player = Players[playerID]
 			
 			if (not (player:IsHuman() and oob.AI)) then
@@ -147,6 +161,12 @@ function InitializeMilitary()
 			end
 		end
 	end
+	SetBunkerAt(15,68)
+	SetBunkerAt(16,68)
+	SetBunkerAt(17,66)
+	SetBunkerAt(16,68)
+	SetBunkerAt(17,70)
+	SetBunkerAt(17,72)
 end
 
 function PlaceUnits(oob)

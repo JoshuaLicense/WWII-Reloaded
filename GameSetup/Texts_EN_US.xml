@@ -8,7 +8,7 @@
 				<Text>{1_Date: number #}</Text>
 		</Row>
 		<Row Tag="TXT_KEY_SCENARIO_WEEK">
-			<Text>{1_WeekNum}</Text>
+			<Text>{1_Week}{2_text}</Text>
 		</Row>
 		<Replace Tag="TXT_KEY_TIME_AD">
 			<Text> </Text>
@@ -1163,6 +1163,13 @@
 			<Text>Escort the convoy to one of your cities.</Text>
 		</Row>
 		
+		<Row Tag="TXT_KEY_UNIT_FORTIFICATION">
+			<Text>Fortification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_UNIT_FORTIFIED_GUN">
+			<Text>Fortification</Text>
+		</Row>
+		
 		<Replace Tag="TXT_KEY_UNIT_HELP_FIELD_GUN">
 			<Text>Field Guns fire smaller shells with higher velocities and flatter trajectories than Howitzers. Combined with armor-piercing ammo they can inflict great casualties on armor units. This regiment-sized unit can stack with a Division unit.</Text>
 		</Replace>
@@ -1525,6 +1532,13 @@
 		</Row>
 		<Row Tag="TXT_KEY_PROMOTION_MARENOSTRUM_DESC">
 			<Text>+ 10% [ICON_STRENGTH] Combat in the Mediterranean.</Text>
+		</Row>
+		
+		<Row Tag="TXT_KEY_PROMOTION_FORTIFIED_GUN">
+			<Text>Fortification</Text>
+		</Row>
+		<Row Tag="TXT_KEY_PROMOTION_FORTIFIED_GUN_DESC">
+			<Text>Limited [COLOR_NEGATIVE_TEXT]visibility[ENDCOLOR].[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Attack[ENDCOLOR].[NEWLINE]Can not [COLOR_NEGATIVE_TEXT]Move[ENDCOLOR].</Text>
 		</Row>
 		
 	</Language_en_US>	

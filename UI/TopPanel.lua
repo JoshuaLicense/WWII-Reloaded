@@ -208,11 +208,11 @@ local function UpdateTopPanelNow()
 		-----------------------------
 		-- Update yields
 		-----------------------------
-		Controls.PersonnelPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_PERSONNEL", g_activePlayer:GetYield(YieldTypes.YIELD_PERSONNEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_PERSONNEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_PERSONNEL, true) )
+		Controls.PersonnelPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_PERSONNEL", g_activePlayer:GetYield(YieldTypes.YIELD_PERSONNEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_PERSONNEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_PERSONNEL, true, true) )
 
-		Controls.MaterielPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_MATERIEL", g_activePlayer:GetYield(YieldTypes.YIELD_MATERIEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_MATERIEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_MATERIEL, true) )
+		Controls.MaterielPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_MATERIEL", g_activePlayer:GetYield(YieldTypes.YIELD_MATERIEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_MATERIEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_MATERIEL, true, true) )
 
-		Controls.FuelPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_FUEL", g_activePlayer:GetYield(YieldTypes.YIELD_FUEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_FUEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_FUEL) )
+		Controls.FuelPerTurn:LocalizeAndSetText( "TXT_KEY_TOP_PANEL_FUEL", g_activePlayer:GetYield(YieldTypes.YIELD_FUEL), g_activePlayer:GetYieldPerTurn(YieldTypes.YIELD_FUEL) - g_activePlayer:GetRequiredYield(YieldTypes.YIELD_FUEL, false, true) )
 		
 		-----------------------------
 		-- Update gold stats
@@ -405,7 +405,7 @@ g_toolTipHandler.PersonnelPerTurn = function()-- control )
 	-- Spending
 
 	tips:insert( "[COLOR:255:150:150:255]" )
-	tips:insertLocalized( "TXT_KEY_TP_UNIT_HEALING", g_activePlayer:GetRequiredYield(iYield, true) )
+	tips:insertLocalized( "TXT_KEY_TP_UNIT_HEALING", g_activePlayer:GetRequiredYield(iYield, true, true) )
 	tips:insert( "[ENDCOLOR]" )
 
 	-- Basic explanation
@@ -457,7 +457,7 @@ g_toolTipHandler.MaterielPerTurn = function()-- control )
 	-- Spending
 
 	tips:insert( "[COLOR:255:150:150:255]" )
-	tips:insertLocalized( "TXT_KEY_TP_UNIT_HEALING", g_activePlayer:GetRequiredYield(iYield, true) )
+	tips:insertLocalized( "TXT_KEY_TP_UNIT_HEALING", g_activePlayer:GetRequiredYield(iYield, true, true) )
 	tips:insert( "[ENDCOLOR]" )
 
 	-- Basic explanation
@@ -489,7 +489,7 @@ g_toolTipHandler.FuelPerTurn = function()-- control )
 	local iPerTurnFromTraits = g_activePlayer:GetYieldPerTurnFromTraits(iYield)
 	
 	local iTotalIncome = iPerTurnFromCities + iPerTurnFromMinors + iPerTurnFromTraits;
-	local iTotalExpenditure = g_activePlayer:GetRequiredYield(iYield)
+	local iTotalExpenditure = g_activePlayer:GetRequiredYield(iYield, false, true)
 	
 	local iYieldPerTurn = g_activePlayer:GetYieldPerTurn(iYield) -- after deductions
 	
